@@ -23,9 +23,9 @@ Multiple micro generators composed into robust generators. These generators are 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm] |  
-|Macro | [@compgen/cra-full](packages/macro-generators/cra-full) | [![@compgen/cra-full][cra-full-badge]][cra-full-npm] |    
-|Macro | [@compgen/nestjs-full](packages/macro-generators/nestjs-full) | [![@compgen/nestjs-full][nest-full-badge]][nest-full-npm] |    
-|Macro | [@compgen/nextjs-full](packages/macro-generators/nextjs-full) | [![@compgen/nextjs-full][next-full-badge]][next-full-npm] |    
+|Macro | [@compgen/cra](packages/macro-generators/cra) | [![@compgen/cra-full][cra-full-badge]][cra-full-npm] |    
+|Macro | [@compgen/nest](packages/macro-generators/nest) | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |    
+|Macro | [@compgen/next](packages/macro-generators/next) | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |    
 
 ## Micro Generators
 
@@ -34,13 +34,13 @@ You can easily selectively add code quality tools and other useful libraries to 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Micro | [@compgen/browserlist](packages/micro-generators/browserlist) | [![@compgen/browserlist][bl-badge]][bl-npm] |
-|Micro | [@compgen/create-react-app](packages/micro-generators/create-react-app) | [![@compgen/create-react-app][cra-badge]][cra-npm] |
+|Micro | [@compgen/cra-min](packages/micro-generators/cra-min) | [![@compgen/cra-min][cra-badge]][cra-npm] |
 |Micro | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm] | 
 |Micro | [@compgen/eslint](packages/micro-generators/eslint) | [![@compgen/eslint][es-badge]][es-npm] |
 |Micro | [@compgen/git-hooks](packages/micro-generators/git-hooks) | [![@compgen/git-hooks][gh-badge]][gh-npm] |
 |Micro | [@compgen/heroku](packages/micro-generators/heroku) | [![@compgen/heroku][he-badge]][he-npm] |
-|Micro | [@compgen/nestjs](packages/micro-generators/nestjs) | [![@compgen/nestjs][nest-badge]][nest-npm] |
-|Micro | [@compgen/nextjs](packages/micro-generators/nextjs) | [![@compgen/nextjs][next-badge]][next-npm] |
+|Micro | [@compgen/nest-min](packages/micro-generators/nest-min) | [![@compgen/nest-min][nest-badge]][nest-npm] |
+|Micro | [@compgen/next-min](packages/micro-generators/next-min) | [![@compgen/next-min][next-badge]][next-npm] |
 |Micro | [@compgen/prettier](packages/micro-generators/prettier) | [![@compgen/prettier][prettier-badge]][prettier-npm] |
 |Micro | [@compgen/stylelint](packages/micro-generators/stylelint) | [![@compgen/stylelint][stylelint-badge]][stylelint-npm] |
 |Micro | [@compgen/ts-node](packages/micro-generators/ts-node) | [![@compgen/ts-node][tsnode-badge]][tsnode-npm] |
@@ -126,8 +126,8 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [bl-badge]: https://badge.fury.io/js/%40compgen%2Fbrowserlist.svg
 [bl-npm]: https://badge.fury.io/js/%40compgen%2Fbrowserlist
 
-[cra-badge]: https://badge.fury.io/js/%40compgen%2Fcreate-react-app.svg
-[cra-npm]: https://badge.fury.io/js/%40compgen%2Fcreate-react-app
+[cra-badge]: https://badge.fury.io/js/%40compgen%2Fcra-min.svg
+[cra-npm]: https://badge.fury.io/js/%40compgen%2Fcra-min
 
 [ef-badge]: https://badge.fury.io/js/%40compgen%2Feditor-config.svg
 [ef-npm]: https://badge.fury.io/js/%40compgen%2Feditor-config
@@ -141,11 +141,11 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [he-badge]: https://badge.fury.io/js/%40compgen%2Fheroku.svg
 [he-npm]: https://badge.fury.io/js/%40compgen%2Fheroku
 
-[nest-badge]: https://badge.fury.io/js/%40compgen%2Fnestjs.svg
-[nest-npm]: https://badge.fury.io/js/%40compgen%2Fnestjs
+[nest-badge]: https://badge.fury.io/js/%40compgen%2Fnest-min.svg
+[nest-npm]: https://badge.fury.io/js/%40compgen%2Fnest-min
 
-[next-badge]: https://badge.fury.io/js/%40compgen%2Fnextjs.svg
-[next-npm]: https://badge.fury.io/js/%40compgen%2Fnextjs
+[next-badge]: https://badge.fury.io/js/%40compgen%2Fnext-min.svg
+[next-npm]: https://badge.fury.io/js/%40compgen%2Fnext-min
 
 [prettier-badge]: https://badge.fury.io/js/%40compgen%2Fprettier.svg
 [prettier-npm]: https://badge.fury.io/js/%40compgen%2Fprettier
@@ -156,11 +156,11 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [tsnode-badge]: https://badge.fury.io/js/%40compgen%2Fts-node.svg
 [tsnode-npm]: https://badge.fury.io/js/%40compgen%2Fts-node
 
-[cra-full-badge]: https://badge.fury.io/js/%40compgen%2Fcra-full.svg
-[cra-full-npm]: https://badge.fury.io/js/%40compgen%2Fcra-full
+[cra-full-badge]: https://badge.fury.io/js/%40compgen%2Fcra.svg
+[cra-full-npm]: https://badge.fury.io/js/%40compgen%2Fcra
 
-[nest-full-badge]: https://badge.fury.io/js/%40compgen%2Fnestjs-full.svg
-[nest-full-npm]: https://badge.fury.io/js/%40compgen%2Fnestjs-full
+[nest-full-badge]: https://badge.fury.io/js/%40compgen%2Fnest.svg
+[nest-full-npm]: https://badge.fury.io/js/%40compgen%2Fnest
 
-[next-full-badge]: https://badge.fury.io/js/%40compgen%2Fnextjs-full.svg
-[next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnextjs-full
+[next-full-badge]: https://badge.fury.io/js/%40compgen%2Fnext.svg
+[next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnext

@@ -1,0 +1,19 @@
+import { Module } from '@nestjs/common'
+{{#if isDatabase}}
+import { DatabaseModule } from 'src/modules/database/database.module'
+{{/if}}
+import { EnvModule } from 'src/modules/env/env.module'
+import { WelcomeModule } from 'src/modules/welcome/welcome.module'
+
+@Module({
+  imports: [
+    EnvModule,
+{{#if isDatabase}}
+    DatabaseModule,
+{{/if}}
+    WelcomeModule,
+  ],
+  controllers: [],
+  providers: [],
+})
+export class AppModule {}

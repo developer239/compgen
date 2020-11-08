@@ -1,0 +1,22 @@
+{
+  "name": "@compgen/ts-node",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index",
+  "bin": {
+    "@compgen/ts-node": "lib/bin.js"
+  },
+  "dependencies": {
+    "@compgen/core": "1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

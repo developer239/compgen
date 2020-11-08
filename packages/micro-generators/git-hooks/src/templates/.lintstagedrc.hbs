@@ -1,0 +1,18 @@
+{
+{{#if isWeb}}
+  "*.{ts,tsx}": [
+{{else}}
+  "*.{ts}": [
+{{/if}}
+{{#if isEslint}}
+    "eslint --fix",
+{{/if}}
+{{#if isPrettier}}
+    "prettier --write",
+{{/if}}
+{{#if isStylelint}}
+    "stylelint",
+{{/if}}
+    "git add"
+  ],
+}

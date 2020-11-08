@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  postgresDb:
+    env_file:
+      - .env.development
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+  postgresDbTest:
+    env_file:
+      - .env.test
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
