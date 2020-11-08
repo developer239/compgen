@@ -1,6 +1,6 @@
 # Composable Generators
 
-![release](https://github.com/developer239/test-release/workflows/release/badge.svg)
+![release](https://github.com/developer239/compgen/workflows/release/badge.svg)
 
 > Replace your big boilerplate repositories with small composable generators.
 
@@ -117,50 +117,50 @@ const projectFolder = '.'
 execute(createWebCodeQualitySchema(), projectFolder)
 ```
 
-[core-badge]: https://badge.fury.io/js/%40test-release%2Fcore.svg
-[core-npm]: https://badge.fury.io/js/%40test-release%2Fcore
+[core-badge]: https://badge.fury.io/js/%40compgen%2Fcore.svg
+[core-npm]: https://badge.fury.io/js/%40compgen%2Fcore
 
-[cc-badge]: https://badge.fury.io/js/%40test-release%2Fcode-quality.svg
-[cc-npm]: https://badge.fury.io/js/%40test-release%2Fcode-quality
+[cc-badge]: https://badge.fury.io/js/%40compgen%2Fcode-quality.svg
+[cc-npm]: https://badge.fury.io/js/%40compgen%2Fcode-quality
 
-[bl-badge]: https://badge.fury.io/js/%40test-release%2Fbrowserlist.svg
-[bl-npm]: https://badge.fury.io/js/%40test-release%2Fbrowserlist
+[bl-badge]: https://badge.fury.io/js/%40compgen%2Fbrowserlist.svg
+[bl-npm]: https://badge.fury.io/js/%40compgen%2Fbrowserlist
 
-[cra-badge]: https://badge.fury.io/js/%40test-release%2Fcreate-react-app.svg
-[cra-npm]: https://badge.fury.io/js/%40test-release%2Fcreate-react-app
+[cra-badge]: https://badge.fury.io/js/%40compgen%2Fcreate-react-app.svg
+[cra-npm]: https://badge.fury.io/js/%40compgen%2Fcreate-react-app
 
-[ef-badge]: https://badge.fury.io/js/%40test-release%2Feditor-config.svg
-[ef-npm]: https://badge.fury.io/js/%40test-release%2Feditor-config
+[ef-badge]: https://badge.fury.io/js/%40compgen%2Feditor-config.svg
+[ef-npm]: https://badge.fury.io/js/%40compgen%2Feditor-config
 
-[es-badge]: https://badge.fury.io/js/%40test-release%2Feslint.svg
-[es-npm]: https://badge.fury.io/js/%40test-release%2Feslint
+[es-badge]: https://badge.fury.io/js/%40compgen%2Feslint.svg
+[es-npm]: https://badge.fury.io/js/%40compgen%2Feslint
 
-[gh-badge]: https://badge.fury.io/js/%40test-release%2Fgit-hooks.svg
-[gh-npm]: https://badge.fury.io/js/%40test-release%2Fgit-hooks
+[gh-badge]: https://badge.fury.io/js/%40compgen%2Fgit-hooks.svg
+[gh-npm]: https://badge.fury.io/js/%40compgen%2Fgit-hooks
 
-[he-badge]: https://badge.fury.io/js/%40test-release%2Fheroku.svg
-[he-npm]: https://badge.fury.io/js/%40test-release%2Fheroku
+[he-badge]: https://badge.fury.io/js/%40compgen%2Fheroku.svg
+[he-npm]: https://badge.fury.io/js/%40compgen%2Fheroku
 
-[nest-badge]: https://badge.fury.io/js/%40test-release%2Fnestjs.svg
-[nest-npm]: https://badge.fury.io/js/%40test-release%2Fnestjs
+[nest-badge]: https://badge.fury.io/js/%40compgen%2Fnestjs.svg
+[nest-npm]: https://badge.fury.io/js/%40compgen%2Fnestjs
 
-[next-badge]: https://badge.fury.io/js/%40test-release%2Fnextjs.svg
-[next-npm]: https://badge.fury.io/js/%40test-release%2Fnextjs
+[next-badge]: https://badge.fury.io/js/%40compgen%2Fnextjs.svg
+[next-npm]: https://badge.fury.io/js/%40compgen%2Fnextjs
 
-[prettier-badge]: https://badge.fury.io/js/%40test-release%2Fprettier.svg
-[prettier-npm]: https://badge.fury.io/js/%40test-release%2Fprettier
+[prettier-badge]: https://badge.fury.io/js/%40compgen%2Fprettier.svg
+[prettier-npm]: https://badge.fury.io/js/%40compgen%2Fprettier
 
-[stylelint-badge]: https://badge.fury.io/js/%40test-release%2Fstylelint.svg
-[stylelint-npm]: https://badge.fury.io/js/%40test-release%2Fstylelint
+[stylelint-badge]: https://badge.fury.io/js/%40compgen%2Fstylelint.svg
+[stylelint-npm]: https://badge.fury.io/js/%40compgen%2Fstylelint
 
-[tsnode-badge]: https://badge.fury.io/js/%40test-release%2Fts-node.svg
-[tsnode-npm]: https://badge.fury.io/js/%40test-release%2Fts-node
+[tsnode-badge]: https://badge.fury.io/js/%40compgen%2Fts-node.svg
+[tsnode-npm]: https://badge.fury.io/js/%40compgen%2Fts-node
 
-[cra-full-badge]: https://badge.fury.io/js/%40test-release%2Fcra-full.svg
-[cra-full-npm]: https://badge.fury.io/js/%40test-release%2Fcra-full
+[cra-full-badge]: https://badge.fury.io/js/%40compgen%2Fcra-full.svg
+[cra-full-npm]: https://badge.fury.io/js/%40compgen%2Fcra-full
 
-[nest-full-badge]: https://badge.fury.io/js/%40test-release%2Fnestjs-full.svg
-[nest-full-npm]: https://badge.fury.io/js/%40test-release%2Fnestjs-full
+[nest-full-badge]: https://badge.fury.io/js/%40compgen%2Fnestjs-full.svg
+[nest-full-npm]: https://badge.fury.io/js/%40compgen%2Fnestjs-full
 
-[next-full-badge]: https://badge.fury.io/js/%40test-release%2Fnextjs-full.svg
-[next-full-npm]: https://badge.fury.io/js/%40test-release%2Fnextjs-full
+[next-full-badge]: https://badge.fury.io/js/%40compgen%2Fnextjs-full.svg
+[next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnextjs-full
