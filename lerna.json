@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "packages/core/*",
+    "packages/micro-generators/*",
+    "packages/macro-generators/*"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

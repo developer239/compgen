@@ -1,0 +1,10 @@
+.idea
+
+node_modules
+packages/core/*/node_modules/
+packages/macro-generators/*/node_modules/
+packages/micro-generators/*/node_modules/
+
+packages/core/*/lib/
+packages/macro-generators/*/lib/
+packages/micro-generators/*/lib/

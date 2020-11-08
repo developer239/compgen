@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@compgen/*": [
+        "packages/core/*/src",
+        "packages/macro-generators/*/src",
+        "packages/micro-generators/*/src"
+      ]
+    }
+  }
+}
