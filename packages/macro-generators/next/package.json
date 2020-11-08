@@ -1,0 +1,27 @@
+{
+  "name": "@compgen/next",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index",
+  "bin": {
+    "@compgen/next": "lib/bin.js"
+  },
+  "dependencies": {
+    "@compgen/browserlist": "1.0.0",
+    "@compgen/code-quality": "1.0.0",
+    "@compgen/core": "1.0.0",
+    "@compgen/git-hooks": "1.0.0",
+    "@compgen/heroku": "1.0.0",
+    "@compgen/next-min": "1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

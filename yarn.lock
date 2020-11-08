@@ -422,6 +422,24 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-11.0.0.tgz#719cf05fcc1abb6533610a2e0f5dd1e61eac14fe"
   integrity sha512-VoNqai1vR5anRF5Tuh/+SWDFk7xi7oMwHrHrbm1BprYXjB2RJsWLhUrStMssDxEl5lW/z3EUdg8RvH/IUBccSQ==
 
+"@compgen/browserlist@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/browserlist/-/browserlist-1.0.0.tgz#6093b04c5fa1f91389f5295dedf22461339d4e0a"
+  integrity sha512-ZwrpkkcqNI8jqvZ4eUG12wzMx3oFxzxe76TWtL+hDp35z8ZTE6tYnmYSExNGzrJw4vM3eBEKCM7VUfrgR3YKRg==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/code-quality@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/code-quality/-/code-quality-1.0.0.tgz#519bda77fbad8eda761bb16d405eaf7cfd9e327f"
+  integrity sha512-0FUlbKeLW1ANeTlmD0ulS+F4l2be9uy2Wxj3qkxpcnMHbPScumV2SqJaF7A9XynDHEI13IJYTL8X9KNigy8SIQ==
+  dependencies:
+    "@compgen/core" "1.0.0"
+    "@compgen/editor-config" "1.0.0"
+    "@compgen/eslint" "1.0.0"
+    "@compgen/prettier" "1.0.0"
+    "@compgen/stylelint" "1.0.0"
+
 "@compgen/core@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@compgen/core/-/core-1.0.0.tgz#15042790088f45a6439f7537f7b3e889c345e030"
@@ -439,6 +457,13 @@
     validate-npm-package-name "3.0.0"
     yargs "16.1.0"
 
+"@compgen/cra-min@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/cra-min/-/cra-min-1.0.0.tgz#b03585fa3dcb6faf8801548ee9f2c3fc97e49c17"
+  integrity sha512-Zmp0wouZmjR6Crmg2lrX+oxAiW3K2SezgFELcBA0MVXVtZtQwyAhX1TRFOMfT2weJQ7nsr7yU8kIipXy1KoeyA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
 "@compgen/editor-config@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@compgen/editor-config/-/editor-config-1.0.0.tgz#9f1f983f13328cb675e93b2e5c63fc4c623ef76d"
@@ -450,6 +475,34 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@compgen/eslint/-/eslint-1.0.0.tgz#e5aa24d67d2907ef94117b2762fe19e14d7bb595"
   integrity sha512-uc0EcWBGNGeZfOnacJyrJlq+dKczJsaPB7vQ/ngJKmB8ihT8dcK8tYqAs8GUH7ALmlA5nweTONkJcXuLSMuaXA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/git-hooks@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/git-hooks/-/git-hooks-1.0.0.tgz#8d3b561a30010d0f58b804291f7f2bfa6082e29d"
+  integrity sha512-zZG432Gbx80yWoaV6/Nj1TpoNv8wO6DtgrFXFpQhZN+e9JSzt9nmyy6V1XFzwdzZUHmc4q+dDMEiiTx72VCqCQ==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/heroku@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/heroku/-/heroku-1.0.0.tgz#2cca3b2183051a04fa0cc142662323c13cbc5101"
+  integrity sha512-RsMWWBw2XL8LyE1r0N8eFqLGZzW5U9aJUxQITtlc0RIctwLQXDf7kSDXxXO5l8BfUE4f9fW4MknX/mygp6TCQA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/nest-min@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/nest-min/-/nest-min-1.0.0.tgz#cf3161b492d4b60279237b4ff3ab943c28a3cda6"
+  integrity sha512-LfPB6ztDCg+h82+7FuriHh/e3jlfvieR9P+Ta4dkIRLF+8nK7ibK+QDAUeiAWmmoJnRitEkPf6d1LKXczmxwIg==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/next-min@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/next-min/-/next-min-1.0.0.tgz#1825949413a9a4e4ad70ce82d7118f96d23be207"
+  integrity sha512-FWTricn+fyIQ8PONFH54SRelXihN/BP1yJ73lrhtxcYC5EsI9WeDGx4vy3KeFO+M5Lf1FKNlm/5qjsDS69+/zw==
   dependencies:
     "@compgen/core" "1.0.0"
 
