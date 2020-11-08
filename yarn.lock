@@ -439,6 +439,34 @@
     validate-npm-package-name "3.0.0"
     yargs "16.1.0"
 
+"@compgen/editor-config@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/editor-config/-/editor-config-1.0.0.tgz#9f1f983f13328cb675e93b2e5c63fc4c623ef76d"
+  integrity sha512-J9VqZXq1T5Ku9VW1qm+RFPrYRFtVPNpcZdOqJwtbrLu2jdaCskP/H8uArCLZ1RDjXllTfgcJAFAV7Csz4RnfXQ==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/eslint@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/eslint/-/eslint-1.0.0.tgz#e5aa24d67d2907ef94117b2762fe19e14d7bb595"
+  integrity sha512-uc0EcWBGNGeZfOnacJyrJlq+dKczJsaPB7vQ/ngJKmB8ihT8dcK8tYqAs8GUH7ALmlA5nweTONkJcXuLSMuaXA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/prettier@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/prettier/-/prettier-1.0.0.tgz#24d1dab7c7eef07e54545c9d3ae61561f356ee95"
+  integrity sha512-0FweCs55jlRorFTYMSxnygVAMYLPkyzR22AGyO5eohmOOrSHuOmAj6j9Hmy8sHnNePceDbhBD6rhmzUB11XuAA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
+"@compgen/stylelint@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@compgen/stylelint/-/stylelint-1.0.0.tgz#5d1fe0589e0e3b423f213cb220821a2761252fe8"
+  integrity sha512-3GsyQmeQeIP7cTL+Us7DKRj7ZwPXqtHsw8+Tzo1UvSoI56hewEbV0ozJAOIhZheDcDpuOoOjQPy05VpztCkJJA==
+  dependencies:
+    "@compgen/core" "1.0.0"
+
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.1.tgz#f72069c330461a06684d119384435e12a5d76e3c"
