@@ -1,3 +1,5 @@
+# [@compgen/core-v1.0.1](https://github.com/developer239/compgen/compare/@compgen/core-v1.0.0...@compgen/core-v1.0.1) (2020-11-11)
+
 # @compgen/core-v1.0.0 (2020-11-08)
 
 
