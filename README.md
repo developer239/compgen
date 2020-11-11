@@ -4,13 +4,13 @@
 
 > Replace your big boilerplate repositories with small composable generators.
 
-_@compgen_ is alternative to Yeoman and other generators that help you to kickstart new projects, prescribe best practices and tools to help you stay productive.
+_@compgen_ is an alternative to Yeoman and other libraries that help you to kickstart new projects, prescribe best practices and configure tools to help you stay productive.
 
-This library is unique though because **_@compgen_ generators are small and composable**. You can use generators separately to generate small chunks of code, or you can compose them together so that you can easily create bigger and more opinionated codebase. 
+This library is unique though because **_@compgen_ generators are small and composable**. You can use generators separately to create small chunks of code, or you can compose them together so that you can create bigger and more opinionated codebase. 
 
 ## Core Packages
 
-You can use these to build your own generators. All packages are written in TypeScript and designed to be easy to use.
+Use these to build your own generators.
 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
@@ -18,7 +18,7 @@ You can use these to build your own generators. All packages are written in Type
 
 ## Generators
 
-Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup. For example when we are setting up CRA the first thing we do is to remove service worker and install code quality tools.
+Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup.
 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------

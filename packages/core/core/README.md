@@ -1,4 +1,4 @@
-# @compgen/core 💦
+# @compgen/core
 
 This documentation will help you get started with writing your own generators. You can start writing your own generators in matter of minutes.
 
