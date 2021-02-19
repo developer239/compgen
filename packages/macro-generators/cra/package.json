@@ -12,12 +12,12 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/browserlist": "1.0.0",
-    "@compgen/code-quality": "1.0.0",
-    "@compgen/core": "1.0.0",
-    "@compgen/cra-min": "1.0.0",
-    "@compgen/git-hooks": "1.0.0",
-    "@compgen/heroku": "1.0.0"
+    "@compgen/browserlist": "^0.1.0",
+    "@compgen/code-quality": "^0.1.0",
+    "@compgen/core": "^0.1.1",
+    "@compgen/cra-min": "^0.1.0",
+    "@compgen/git-hooks": "^0.1.0",
+    "@compgen/heroku": "^0.1.0"
   },
   "publishConfig": {
     "access": "public"
