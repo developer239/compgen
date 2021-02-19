@@ -7,7 +7,6 @@
     "test": "jest",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build": "lerna exec -- rollup -c ../../../rollup.config.js",
-    "lerna:build:dev": "yarn lerna:build -- --watch",
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package"
   },

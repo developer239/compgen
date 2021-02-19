@@ -8,3 +8,5 @@ packages/micro-generators/*/node_modules/
 packages/core/*/lib/
 packages/macro-generators/*/lib/
 packages/micro-generators/*/lib/
+
+temp-dist/
