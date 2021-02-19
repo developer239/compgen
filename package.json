@@ -2,20 +2,14 @@
   "name": "linters",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "lerna:bootstrap": "lerna bootstrap",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages",
-    "build:dev": "yarn install && npm run lerna:build && npm run lerna link --force-local",
-    "lerna:build": "lerna exec --concurrency 1 -- npx --no-install rollup -c ../../../rollup.config.js",
-    "lerna:release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
-    "release": "npm run lerna:build && npm run lerna:release",
-    "test": "jest"
+    "test": "jest",
+    "lerna:build": "lerna exec -- rollup -c ../../../rollup.config.js",
+    "lerna:version": "lerna version",
+    "lerna:publish": "lerna publish from-package"
   },
-  "workspaces": [
-    "packages/core/*",
-    "packages/micro-generators/*",
-    "packages/macro-generators/*"
-  ],
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@linters/commitlint-config": "1.4.0",
@@ -27,7 +21,6 @@
     "@types/jest": "26.0.15",
     "eslint": "7.13.0",
     "eslint-config-prettier": "6.15.0",
-    "eslint-plugin-import": "2.22.1",
     "husky": "4.3.0",
     "jest": "26.6.3",
     "lerna": "3.22.1",
@@ -39,8 +32,6 @@
     "rollup-plugin-preserve-shebangs": "0.2.0",
     "rollup-plugin-progress": "1.1.2",
     "rollup-plugin-typescript2": "0.29.0",
-    "semantic-release": "17.2.2",
-    "semantic-release-monorepo": "7.0.3",
     "ts-jest": "26.4.4",
     "typescript": "4.0.5"
   }
