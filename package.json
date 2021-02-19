@@ -2,11 +2,12 @@
   "name": "linters",
   "private": true,
   "scripts": {
-    "lerna:bootstrap": "lerna bootstrap",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages",
     "test": "jest",
+    "lerna:bootstrap": "lerna bootstrap",
     "lerna:build": "lerna exec -- rollup -c ../../../rollup.config.js",
+    "lerna:build:dev": "yarn lerna:build -- --watch",
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish from-package"
   },
