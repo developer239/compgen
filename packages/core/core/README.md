@@ -141,4 +141,4 @@ const run = async () => {
 run()
 ```
 
-Easy, isn't it? 🚀 Now you don't have to configure prettier yourselves ever again...
+Easy, isn't it? 🚀 Now you don't have to configure prettier yourselves ever again.
