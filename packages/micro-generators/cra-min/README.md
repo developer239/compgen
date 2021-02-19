@@ -1,6 +1,8 @@
 # @compgen/cra-min
 
-A micro generator for generating minimal create-react-app configuration.
+**Unless you are building custom CRA generator then you probably want to use: [@compgen/cra](packages/macro-generators/cra)**
+
+This is a micro generator for minimal [CRA](https://reactjs.org/docs/create-a-new-react-app.html) configuration. This generator will remove most of the code that CRA generates.
 
 ### CLI
 
@@ -40,5 +42,3 @@ Now all you have to do is run:
 ```
 ts-node src/index.ts
 ```
-
-test
