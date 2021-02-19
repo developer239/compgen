@@ -19,31 +19,48 @@
     validate-npm-package-name "3.0.0"
     yargs "16.1.0"
 
-"@compgen/editor-config@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@compgen/editor-config/-/editor-config-1.0.0.tgz#9f1f983f13328cb675e93b2e5c63fc4c623ef76d"
-  integrity sha512-J9VqZXq1T5Ku9VW1qm+RFPrYRFtVPNpcZdOqJwtbrLu2jdaCskP/H8uArCLZ1RDjXllTfgcJAFAV7Csz4RnfXQ==
+"@compgen/core@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@compgen/core/-/core-0.1.1.tgz#222fcf22552bc421fdec6d851f2eb39b2bdec661"
+  integrity sha512-3x6gaKcPmPu2RQAALg8RKHQRLH2/TgXT2F+bfovscE5aayg6hPXfbyQbxl9XgPuwz4Iqax7noCXORRZNRjTmBw==
+  dependencies:
+    chalk "4.1.0"
+    figlet "1.5.0"
+    handlebars "4.7.6"
+    inquirer "7.3.3"
+    ora "5.1.0"
+    ramda "0.27.1"
+    recursive-copy "2.0.11"
+    shelljs "0.8.4"
+    through2 "4.0.2"
+    validate-npm-package-name "3.0.0"
+    yargs "16.1.0"
+
+"@compgen/editor-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@compgen/editor-config/-/editor-config-0.1.0.tgz#614e9a98d2dc2d180d772c3c39570e3f0ad3cfa0"
+  integrity sha512-0wKBJJVJdIZizhgWfHSigOBcxiQayxZmK8VS4ZM3poAqlnIJIrI72k3lKjVfqO7uZNDfexTbqrMmvSnCvyu50w==
   dependencies:
     "@compgen/core" "1.0.0"
 
-"@compgen/eslint@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@compgen/eslint/-/eslint-1.0.0.tgz#e5aa24d67d2907ef94117b2762fe19e14d7bb595"
-  integrity sha512-uc0EcWBGNGeZfOnacJyrJlq+dKczJsaPB7vQ/ngJKmB8ihT8dcK8tYqAs8GUH7ALmlA5nweTONkJcXuLSMuaXA==
+"@compgen/eslint@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@compgen/eslint/-/eslint-0.1.0.tgz#39e1de453c7eeccf856efe031a2e4ee1505a67b8"
+  integrity sha512-ajb/VNPA3mgMsdKhIk7BvdzyqUjJTDualZQLbe8sPe09aVUcd0yRr/jJ48KV4EHuZbi7Iykw4uRNpZnoUh4AiQ==
   dependencies:
     "@compgen/core" "1.0.0"
 
-"@compgen/prettier@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@compgen/prettier/-/prettier-1.0.0.tgz#24d1dab7c7eef07e54545c9d3ae61561f356ee95"
-  integrity sha512-0FweCs55jlRorFTYMSxnygVAMYLPkyzR22AGyO5eohmOOrSHuOmAj6j9Hmy8sHnNePceDbhBD6rhmzUB11XuAA==
+"@compgen/prettier@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@compgen/prettier/-/prettier-0.1.0.tgz#0af88e13afd7e933b10b9b5f1fa87d18a52dc066"
+  integrity sha512-X5qhLm8yWzMEWGABSruCgLNmvR/gAjnWJ6ZpKHuztSEtKMr2d5gt7B1hWLZGMp6hyhOXwbMr/nCSdvqaaySeyg==
   dependencies:
     "@compgen/core" "1.0.0"
 
-"@compgen/stylelint@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@compgen/stylelint/-/stylelint-1.0.0.tgz#5d1fe0589e0e3b423f213cb220821a2761252fe8"
-  integrity sha512-3GsyQmeQeIP7cTL+Us7DKRj7ZwPXqtHsw8+Tzo1UvSoI56hewEbV0ozJAOIhZheDcDpuOoOjQPy05VpztCkJJA==
+"@compgen/stylelint@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@compgen/stylelint/-/stylelint-0.1.0.tgz#318eeaff5810feeb8c78b8b300b9c4fcd997d31c"
+  integrity sha512-DlgmRVpouFRdRdrlQzXr5H9Hx+3jWu3CJrBu6Hrha8dyV4uV7ScE5zXsVaSo+/CAuH/+AQdQvuhM5tqRxSuFIQ==
   dependencies:
     "@compgen/core" "1.0.0"
 
