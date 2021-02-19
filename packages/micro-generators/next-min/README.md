@@ -1,6 +1,8 @@
 # @compgen/next-min
 
-A micro generator for generating nextjs configuration.
+**Unless you are building custom CRA generator then you probably want to use: [@compgen/next](packages/macro-generators/next)**
+
+This is a micro generator for minimal [CRA](https://github.com/vercel/next.js) configuration.
 
 ### CLI
 
