@@ -1,6 +1,6 @@
 # @compgen/browserlist
 
-A micro generator for generating browserlist configuration.
+A micro generator for generating [browserlist](https://github.com/browserslist/browserslist) configuration.
 
 ### CLI
 
