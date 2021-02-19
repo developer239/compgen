@@ -1,6 +1,6 @@
 # @compgen/editor-config
 
-A micro generator for generating editor-config configuration.
+A micro generator for generating [editor-config](https://editorconfig.org/) configuration.
 
 ### CLI
 
@@ -23,7 +23,7 @@ import { createSchema } from '@compgen/editor-config'
 
 const generate = async () => {
   const projectFolder = getProjectFolder() ?? '.'
-  
+
   const schema = createSchema()
   await execute(schema, projectFolder)
 }
