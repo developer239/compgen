@@ -12,7 +12,6 @@ With that said I will create an actual documentation in the future.
 
 Every generator uses `builder` to generate `ISchema`. The schema holds information about what commands we want to run, what files we want to create and what dependencies we want to install.
 
-
 ```ts
 import { builder } from '@compgen/core'
 
@@ -59,7 +58,7 @@ export const createPrettierSchema = () => {
   const schema = builder('prettier')
 
   // ...
-  
+
   schema.addFolder({
     name: 'prettier',
     source: path.join(__dirname, 'templates'),
@@ -71,8 +70,8 @@ export const createPrettierSchema = () => {
 
 Prettier will not work unless we install npm dependencies. That is where functions
 
- - `addDependencies`
- - `addDevDependencies`
+- `addDependencies`
+- `addDevDependencies`
 
 are going to help us.
 
@@ -83,7 +82,7 @@ export const createPrettierSchema = () => {
   const schema = builder('prettier')
 
   // ...
-  
+
   schema.addDevDependencies(['prettier', '@linters/prettier-config'])
 }
 ```
@@ -99,7 +98,7 @@ export const createPrettierSchema = () => {
   const schema = builder('prettier')
 
   // ...
-  
+
   schema.addScript('format', "prettier --write '*/**/*.{ts,tsx,css,md,json}'")
 }
 ```
@@ -142,5 +141,4 @@ const run = async () => {
 run()
 ```
 
-Easy, isn't it? 🚀 Now you don't have to configure prettier yourselves ever again. 
-
+Easy, isn't it? 🚀 Now you don't have to configure prettier yourselves ever again...
