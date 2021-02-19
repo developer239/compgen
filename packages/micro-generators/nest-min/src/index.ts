@@ -6,19 +6,23 @@ interface IOptions {
   isDatabase: boolean
 }
 
-export const createSchema = ({
-  projectFolder,
-  isDatabase,
-}: IOptions) => {
+export const createSchema = ({ projectFolder, isDatabase }: IOptions) => {
   const schema = builder('nestjs')
 
   schema.addCommand({
-    command: `npx nest new ${projectFolder} --package-manager yarn`,
+    command: `npx @nestjs/cli new ${projectFolder} --package-manager yarn`,
     successMessage: '[nest.js] initialize',
     priority: 99,
   })
 
-  schema.addDependencies(['@nestjs/config', 'class-transformer', '@nestjs/swagger', 'swagger-ui-express', '@godaddy/terminus', '@nestjs/terminus'])
+  schema.addDependencies([
+    '@nestjs/config',
+    'class-transformer',
+    '@nestjs/swagger',
+    'swagger-ui-express',
+    '@godaddy/terminus',
+    '@nestjs/terminus',
+  ])
 
   schema.addCommand({
     command: 'rm -rf src test .eslintrc.js .prettierrc README.md',
@@ -40,12 +44,17 @@ export const createSchema = ({
     source: path.join(__dirname, 'templates/base'),
     context: {
       isDatabase,
-      projectFolder
+      projectFolder,
     },
   })
 
   if (isDatabase) {
-    schema.addDependencies(['pg', 'typeorm', '@nestjs/typeorm', 'pg-connection-string'])
+    schema.addDependencies([
+      'pg',
+      'typeorm',
+      '@nestjs/typeorm',
+      'pg-connection-string',
+    ])
     schema.addDevDependencies(['@types/pg-connection-string'])
 
     schema.addFolder({
@@ -53,7 +62,7 @@ export const createSchema = ({
       source: path.join(__dirname, 'templates/typeorm'),
       context: {
         isDatabase,
-        projectFolder
+        projectFolder,
       },
     })
   }
