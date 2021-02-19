@@ -1,6 +1,6 @@
 # @compgen/heroku
 
-A micro generator for generating heroku configuration.
+A micro generator for generating [Heroku](https://github.com/heroku) configuration.
 
 ### CLI
 
@@ -23,6 +23,9 @@ import {
   getProjectFolder,
   askYesNo,
   askAppType,
+  AppType,
+  askProjectName,
+  logger,
 } from '@compgen/core'
 import { createSchema } from '@compgen/heroku'
 
@@ -32,23 +35,36 @@ export const askPostgreAddon = () =>
   askYesNo('Do you use heroku-postgresql addon?')
 
 const generate = async () => {
-  const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
-  const isCRA = await askIsCRA()
 
-  let isDatabase = false
-
-  if (!isCRA) {
-    isDatabase = await askPostgreAddon()
+  if (appType === AppType.MOBILE) {
+    return logger.error(`${appType} not supported`)
   }
 
-  const schema = createSchema({
+  const projectFolder = getProjectFolder() ?? '.'
+  let projectName = projectFolder
+  let isCRA = false
+  let isDatabase = false
+
+  if (projectName === '.') {
+    const projectInfo = await askProjectName('How is your project called?')
+    projectName = projectInfo.projectFolder
+  }
+
+  if (appType === AppType.NODE) {
+    isDatabase = await askPostgreAddon()
+  } else {
+    isCRA = await askIsCRA()
+  }
+
+  const herokuSchema = createSchema({
     appType,
-    projectFolder,
+    projectName,
     isCRA,
     isDatabase,
   })
-  await execute(schema, projectFolder)
+
+  await execute(herokuSchema, projectFolder)
 }
 
 generate()
