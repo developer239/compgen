@@ -36,5 +36,3 @@ Now all you have to do is run:
 ```
 ts-node src/index.ts
 ```
-
-test
