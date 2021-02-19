@@ -1,6 +1,6 @@
 {
   "name": "@compgen/code-quality",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -12,11 +12,11 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.1.2",
-    "@compgen/editor-config": "^0.1.1",
-    "@compgen/eslint": "^0.1.1",
-    "@compgen/prettier": "^0.1.1",
-    "@compgen/stylelint": "^0.1.1"
+    "@compgen/core": "^0.1.3",
+    "@compgen/editor-config": "^0.1.2",
+    "@compgen/eslint": "^0.1.2",
+    "@compgen/prettier": "^0.1.2",
+    "@compgen/stylelint": "^0.1.2"
   },
   "publishConfig": {
     "access": "public"
