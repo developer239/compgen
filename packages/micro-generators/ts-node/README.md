@@ -1,6 +1,6 @@
 # @compgen/ts-node
 
-A micro generator for generating ts-node configuration.
+A micro generator for generating [ts-node](https://github.com/TypeStrong/ts-node) configuration.
 
 ### CLI
 
@@ -23,7 +23,7 @@ import { createSchema } from '@compgen/ts-node'
 
 const generate = async () => {
   const projectFolder = getProjectFolder() ?? '.'
-  
+
   const schema = createSchema()
   await execute(schema, projectFolder)
 }
