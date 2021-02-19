@@ -14,7 +14,7 @@ const run = async () => {
   const hasPrettier = await askHasPrettier()
 
   if (type !== AppType.WEB && type !== AppType.MOBILE) {
-    logger.error('App type is not supported!')
+    return logger.error('App type is not supported!')
   }
 
   const stylelintSchema =

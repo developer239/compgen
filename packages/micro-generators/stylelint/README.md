@@ -26,10 +26,7 @@ import {
   logError,
   askYesNo,
 } from '@compgen/core'
-import {
-  createSchemaForMobile,
-  createSchemaForWeb,
-} from '@compgen/stylelint'
+import { createSchemaForMobile, createSchemaForWeb } from '@compgen/stylelint'
 
 export const askHasPrettier = () => askYesNo('Do you use prettier?')
 
@@ -39,7 +36,7 @@ const generate = async () => {
   const hasPrettier = await askHasPrettier()
 
   if (type !== AppType.WEB && type !== AppType.MOBILE) {
-    logError('App type is not supported!')
+    return logError('App type is not supported!')
   }
 
   const stylelintSchema =
