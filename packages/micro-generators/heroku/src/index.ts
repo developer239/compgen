@@ -4,14 +4,14 @@ import { AppType, builder } from '@compgen/core'
 interface IOptions {
   appType: AppType
   isCRA: boolean
-  projectFolder: string
+  projectName: string
   isDatabase?: boolean
 }
 
 export const createSchema = ({
   appType,
   isCRA,
-  projectFolder,
+  projectName,
   isDatabase,
 }: IOptions) => {
   const schema = builder('heroku')
@@ -27,7 +27,7 @@ export const createSchema = ({
     name: 'heroku',
     source: path.join(__dirname, 'templates', appType),
     context: {
-      projectFolder,
+      projectName,
       isDatabase: Boolean(isDatabase),
     },
   })

@@ -1,5 +1,7 @@
 import {
+  AppType,
   askAppType,
+  askProjectName,
   execute,
   getProjectFolder,
   logger,
@@ -8,19 +10,32 @@ import { askIsCRA, askPostgreAddon } from './services/prompt'
 import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectFolder() ?? '.'
+  // TODO: ask only if web/node
   const appType = await askAppType()
-  const isCRA = await askIsCRA()
 
+  if (appType === AppType.MOBILE) {
+    return logger.error(`${appType} not supported`)
+  }
+
+  const projectFolder = getProjectFolder() ?? '.'
+  let projectName = projectFolder
+  let isCRA = false
   let isDatabase = false
 
-  if (!isCRA) {
+  if (projectName === '.') {
+    const projectInfo = await askProjectName('How is your project called?')
+    projectName = projectInfo.projectFolder
+  }
+
+  if (appType === AppType.NODE) {
     isDatabase = await askPostgreAddon()
+  } else {
+    isCRA = await askIsCRA()
   }
 
   const herokuSchema = createSchema({
     appType,
-    projectFolder,
+    projectName,
     isCRA,
     isDatabase,
   })

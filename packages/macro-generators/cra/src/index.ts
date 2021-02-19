@@ -20,26 +20,32 @@ export const createSchema = ({
 
   const schema = builder('cra')
 
-  schema.combineSchema(createReactAppSchema({
-    projectFolder,
-    isRouter,
-  }))
+  schema.combineSchema(
+    createReactAppSchema({
+      projectFolder,
+      isRouter,
+    })
+  )
   schema.combineSchema(createBrowserlistSchema())
   schema.combineSchema(createCodeQualitySchema({ appType }))
-  schema.combineSchema(createGitHooksSchema({
-    appType,
-    isEslint: true,
-    isPrettier: true,
-    isStylelint: true,
-  }))
+  schema.combineSchema(
+    createGitHooksSchema({
+      appType,
+      isEslint: true,
+      isPrettier: true,
+      isStylelint: true,
+    })
+  )
 
   if (isHeroku) {
-    schema.combineSchema(createHerokuSchema({
-      appType,
-      projectFolder,
-      isCRA: true,
-      isDatabase: false,
-    }))
+    schema.combineSchema(
+      createHerokuSchema({
+        appType,
+        projectName: projectFolder,
+        isCRA: true,
+        isDatabase: false,
+      })
+    )
   }
 
   return schema.toJson()

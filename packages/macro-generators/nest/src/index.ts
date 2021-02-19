@@ -39,7 +39,7 @@ export const createSchema = ({
       createHerokuSchema({
         appType,
         isCRA: false,
-        projectFolder,
+        projectName: projectFolder,
         isDatabase,
       })
     )

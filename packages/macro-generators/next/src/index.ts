@@ -32,7 +32,7 @@ export const createSchema = ({ projectFolder, isHeroku }: IOptions) => {
       createHerokuSchema({
         appType,
         isCRA: false,
-        projectFolder,
+        projectName: projectFolder,
         isDatabase: false,
       })
     )
