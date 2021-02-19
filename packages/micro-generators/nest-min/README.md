@@ -1,6 +1,6 @@
 # @compgen/nest-min
 
-A micro generator for generating nestjs configuration.
+A micro generator for generating [nestjs](https://github.com/nestjs/nest.git) configuration.
 
 ### CLI
 
