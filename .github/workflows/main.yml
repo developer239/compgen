@@ -43,6 +43,7 @@ jobs:
       - name: Bump versions and publish packages
         if: contains(github.event.commits[0].message, '[skip-ci]') == false
         run: |
+          yarn lerna:build
           yarn lerna:version
           yarn lerna:publish
         env:
