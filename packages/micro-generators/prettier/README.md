@@ -1,6 +1,6 @@
 # @compgen/prettier
 
-A micro generator for generating prettier configuration.
+A micro generator for generating [prettier](https://github.com/prettier/prettier) configuration.
 
 ### CLI
 
