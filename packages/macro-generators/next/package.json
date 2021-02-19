@@ -10,9 +10,7 @@
     "lib"
   ],
   "types": "lib/index",
-  "bin": {
-    "@compgen/next": "lib/bin.js"
-  },
+  "bin": "lib/bin.js",
   "dependencies": {
     "@compgen/browserlist": "1.0.0",
     "@compgen/code-quality": "1.0.0",

@@ -10,9 +10,7 @@
     "lib"
   ],
   "types": "lib/index",
-  "bin": {
-    "@compgen/code-quality": "lib/bin.js"
-  },
+  "bin": "lib/bin.js",
   "dependencies": {
     "@compgen/core": "^0.1.1",
     "@compgen/editor-config": "^0.1.0",

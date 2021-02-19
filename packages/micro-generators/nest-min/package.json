@@ -10,9 +10,7 @@
     "lib"
   ],
   "types": "lib/index",
-  "bin": {
-    "@compgen/nest-min": "lib/bin.js"
-  },
+  "bin": "lib/bin.js",
   "dependencies": {
     "@compgen/core": "1.0.0"
   },
