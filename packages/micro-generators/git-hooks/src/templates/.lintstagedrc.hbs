@@ -11,8 +11,12 @@
     "prettier --write",
 {{/if}}
 {{#if isStylelint}}
-    "stylelint",
+  "stylelint"
 {{/if}}
-    "git add"
   ],
+{{#if isPrettier}}
+  "*.{md,json}": [
+    "prettier --write"
+  ]
+{{/if}}
 }
