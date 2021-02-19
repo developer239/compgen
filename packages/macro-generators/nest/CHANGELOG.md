@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/developer239/compgen/compare/@compgen/nest@0.1.2...@compgen/nest@0.2.0) (2021-02-19)
+
+
+### Features
+
+* improve heroku templates ([f8a8305](https://github.com/developer239/compgen/commit/f8a8305d029ed4562e7cf3878ef3d1b1285c42d7))
+
+
+
+
+
 ## [0.1.2](https://github.com/developer239/compgen/compare/@compgen/nest@0.1.1...@compgen/nest@0.1.2) (2021-02-19)
 
 **Note:** Version bump only for package @compgen/nest

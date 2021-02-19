@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.1.2...@compgen/nest-min@0.1.3) (2021-02-19)
+
+
+### Bug Fixes
+
+* nest cli initialization command ([3534a9a](https://github.com/developer239/compgen/commit/3534a9a9307dd667077a55a50f9b77dce10fbb54))
+
+
+
+
+
 ## [0.1.2](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.1.1...@compgen/nest-min@0.1.2) (2021-02-19)
 
 **Note:** Version bump only for package @compgen/nest-min

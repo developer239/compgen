@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/developer239/compgen/compare/@compgen/git-hooks@0.1.2...@compgen/git-hooks@0.2.0) (2021-02-19)
+
+
+### Bug Fixes
+
+* lintstaged template spacing ([5e3ac4c](https://github.com/developer239/compgen/commit/5e3ac4c5970fb4752c09d58072c83ef364ca5b58))
+
+
+### Features
+
+* update lintstaged template ([42a9f90](https://github.com/developer239/compgen/commit/42a9f908afbd8469481da13bc89fb724824fb9d3))
+
+
+
+
+
 ## [0.1.2](https://github.com/developer239/compgen/compare/@compgen/git-hooks@0.1.1...@compgen/git-hooks@0.1.2) (2021-02-19)
 
 **Note:** Version bump only for package @compgen/git-hooks
