@@ -1,6 +1,10 @@
 # @compgen/git-hooks
 
-A micro generator for generating git-hooks configuration.
+A micro generator for essential git hooks:
+
+- [husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [commitlint](https://github.com/conventional-changelog/commitlint)
 
 ### CLI
 
@@ -18,7 +22,13 @@ You have to generate JSON schema and use `execute` function from `@compgen/core`
 
 ```ts
 // src/index.ts
-import { execute, getProjectFolder, askYesNo, askAppType, AppType } from '@compgen/core'
+import {
+  execute,
+  getProjectFolder,
+  askYesNo,
+  askAppType,
+  AppType,
+} from '@compgen/core'
 import { createSchema } from '@compgen/git-hooks'
 
 export const askIsEslint = () => askYesNo('Do you use eslint?')
@@ -27,15 +37,14 @@ export const askIsPrettier = () => askYesNo('Do you use prettier?')
 
 export const askIsStylelint = () => askYesNo('Do you use stylelint?') // only ask in web projects
 
-
 const generate = async () => {
   const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
   const isEslint = await askIsEslint()
   const isPrettier = await askIsPrettier()
-  
+
   let isStylelint = false
-  
+
   if (appType !== AppType.NODE) {
     isStylelint = await askIsStylelint()
   }
