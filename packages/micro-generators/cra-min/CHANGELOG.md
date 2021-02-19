@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/developer239/compgen/compare/@compgen/cra-min@0.1.0...@compgen/cra-min@0.1.1) (2021-02-19)
+
+
+### Bug Fixes
+
+* bin target ([c639825](https://github.com/developer239/compgen/commit/c639825f9c5c430880d33deeb648c9a087102fae))
+* lockfiles ([99c63e8](https://github.com/developer239/compgen/commit/99c63e8f7192b2a8262f74e6f0fbd6943ebc1eb4))
+
+
+
+
+
 # 0.1.0 (2021-02-19)
 
 
