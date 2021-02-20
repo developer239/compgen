@@ -34,7 +34,7 @@ export interface ISchemaAddFile {
 
 export interface ISchemaAddProperty {
   path: string[]
-  value: string | number | boolean
+  value: string | number | boolean | object
 }
 
 export interface ISchema {
