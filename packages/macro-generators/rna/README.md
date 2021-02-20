@@ -28,12 +28,17 @@ You have to generate JSON schema and use `execute` function from `@compgen/core`
 ```ts
 // src/index.ts
 import { execute, askProjectName, toAlphanumeric } from '@compgen/core'
+import { askNavigationType } from '@compgen/rna-min'
 import { createSchema } from '@compgen/rna'
 
 const generate = async () => {
   const { projectFolder } = await askProjectName()
+  const navigationType = await askNavigationType()
 
-  const schema = createSchema({ projectFolder: toAlphanumeric(projectFolder) })
+  const schema = createSchema({
+    projectFolder: toAlphanumeric(projectFolder),
+    navigationType,
+  })
 
   await execute(schema, toAlphanumeric(projectFolder))
 }

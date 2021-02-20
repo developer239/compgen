@@ -1,11 +1,20 @@
 import path from 'path'
 import { builder } from '@compgen/core'
 
-interface IOptions {
-  projectFolder: string
+export { askNavigationType } from './prompt'
+
+export enum NavigationType {
+  NONE = 'NONE',
+  REACT_NATIVE_NAVIGATION = 'REACT_NATIVE_NAVIGATION',
+  REACT_NAVIGATION = 'REACT_NAVIGATION',
 }
 
-export const createSchema = ({ projectFolder }: IOptions) => {
+export interface IOptions {
+  projectFolder: string
+  navigationType: NavigationType
+}
+
+export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
   const schema = builder('rna-min')
 
   schema.addFolder({
@@ -58,6 +67,26 @@ export const createSchema = ({ projectFolder }: IOptions) => {
     '@types/react-test-renderer',
   ])
   schema.removeDependencies(['@react-native-community/eslint-config'])
+
+  switch (navigationType) {
+    case NavigationType.REACT_NAVIGATION:
+      schema.addDependencies([
+        'react-navigation',
+        'react-native-reanimated',
+        'react-native-gesture-handler',
+        'react-native-screens',
+        'react-native-safe-area-context',
+        'react-navigation-stack',
+        'react-navigation-tabs',
+      ])
+      schema.addFolder({
+        label: 'react navigation codebase',
+        source: path.join(__dirname, 'templates/react-navigation'),
+        context: {
+          projectFolder,
+        },
+      })
+  }
 
   return schema.toJson()
 }

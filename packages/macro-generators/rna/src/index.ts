@@ -1,13 +1,17 @@
 import { createSchema as createCodeQualitySchema } from '@compgen/code-quality'
 import { AppType, builder } from '@compgen/core'
 import { createSchema as createGitHooksSchema } from '@compgen/git-hooks'
-import { createSchema as createRNASchema } from '@compgen/rna-min'
+import {
+  createSchema as createRNASchema,
+  NavigationType,
+} from '@compgen/rna-min'
 
 export interface IOptions {
   projectFolder: string
+  navigationType: NavigationType
 }
 
-export const createSchema = ({ projectFolder }: IOptions) => {
+export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
   const appType = AppType.REACT_NATIVE
 
   const schema = builder('cra')
@@ -15,6 +19,7 @@ export const createSchema = ({ projectFolder }: IOptions) => {
   schema.combineSchema(
     createRNASchema({
       projectFolder,
+      navigationType,
     })
   )
   schema.combineSchema(createCodeQualitySchema({ appType }))
