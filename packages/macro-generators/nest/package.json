@@ -1,6 +1,6 @@
 {
   "name": "@compgen/nest",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -12,11 +12,11 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/code-quality": "^0.2.1",
-    "@compgen/core": "^0.3.1",
-    "@compgen/git-hooks": "^0.3.1",
-    "@compgen/heroku": "^0.3.1",
-    "@compgen/nest-min": "^0.1.5"
+    "@compgen/code-quality": "^0.2.2",
+    "@compgen/core": "^0.4.0",
+    "@compgen/git-hooks": "^0.3.2",
+    "@compgen/heroku": "^0.3.2",
+    "@compgen/nest-min": "^0.1.6"
   },
   "publishConfig": {
     "access": "public"

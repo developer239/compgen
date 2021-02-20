@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/developer239/compgen/compare/@compgen/core@0.3.1...@compgen/core@0.4.0) (2021-02-20)
+
+
+### Features
+
+* add angular generator ([f43cf35](https://github.com/developer239/compgen/commit/f43cf35cab35611c525cd185158bbc6b9e36979d))
+
+
+
+
+
 ## [0.3.1](https://github.com/developer239/compgen/compare/@compgen/core@0.3.0...@compgen/core@0.3.1) (2021-02-20)
 
 
