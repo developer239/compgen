@@ -55,10 +55,10 @@ export const createSchema = ({ projectFolder }: IOptions) => {
     'metro-react-native-babel-preset',
     '@types/jest @types/react',
     '@types/react-native',
-    '@types/react-test-renderer',
     '@testing-library/react-native',
     '@types/node @types/styled-components',
     'babel-plugin-module-resolver',
+    'react-test-renderer',
     '@types/react-test-renderer',
   ])
   schema.removeDependencies(['@react-native-community/eslint-config'])
