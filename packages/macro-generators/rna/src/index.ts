@@ -22,7 +22,7 @@ export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
       navigationType,
     })
   )
-  schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(createCodeQualitySchema({ appType, projectFolder }))
   schema.combineSchema(
     createGitHooksSchema({
       appType,

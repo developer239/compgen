@@ -2,6 +2,7 @@ export enum AppType {
   REACT = 'react',
   REACT_NATIVE = 'react-native',
   NODE = 'node',
+  ANGULAR = 'angular',
 }
 
 export enum CDType {

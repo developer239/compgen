@@ -31,7 +31,7 @@ export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
   })
   schema.addCommand({
     command:
-      'rm .eslintrc.js .flowconfig .prettierrc.js App.js babel.config.js index.js',
+      'rm .eslintrc.js.hbs .flowconfig .prettierrc.js App.js babel.config.js index.js',
     successMessage: '[fs][remove files] default files',
     priority: 98,
     shouldRunInProject: true,

@@ -6,7 +6,7 @@ import {
   logger,
 } from '@compgen/core'
 import { askHasPrettier } from './services/prompt'
-import { createSchemaForMobile, createSchemaForWeb } from './index'
+import { createSchemaForReactNative, createSchemaForReact } from './index'
 
 const run = async () => {
   const projectFolder = getProjectFolder() ?? '.'
@@ -15,8 +15,8 @@ const run = async () => {
 
   const stylelintSchema =
     type === AppType.REACT
-      ? createSchemaForWeb({ hasPrettier })
-      : createSchemaForMobile({ hasPrettier })
+      ? createSchemaForReact({ hasPrettier })
+      : createSchemaForReactNative({ hasPrettier })
 
   await execute(stylelintSchema, projectFolder)
 }

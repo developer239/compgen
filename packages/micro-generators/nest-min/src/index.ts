@@ -25,7 +25,7 @@ export const createSchema = ({ projectFolder, isDatabase }: IOptions) => {
   ])
 
   schema.addCommand({
-    command: 'rm -rf src test .eslintrc.js .prettierrc README.md',
+    command: 'rm -rf src test .eslintrc.js.hbs .prettierrc README.md',
     successMessage: '[fs][remove files] old project structure',
     priority: 98,
     shouldRunInProject: true,

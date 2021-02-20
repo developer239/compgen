@@ -27,7 +27,7 @@ export const createSchema = ({
     })
   )
   schema.combineSchema(createBrowserlistSchema())
-  schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(createCodeQualitySchema({ appType, projectFolder }))
   schema.combineSchema(
     createGitHooksSchema({
       appType,

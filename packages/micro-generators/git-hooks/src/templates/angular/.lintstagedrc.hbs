@@ -1,0 +1,20 @@
+{
+  "*.{css,scss}": [
+{{#if isStylelint}}
+    "stylelint --syntax scss --fix",
+{{/if}}
+{{#if isPrettier}}
+    "prettier --write"
+{{/if}}
+  ],
+{{#if isPrettier}}
+  "*.{html,ts,md,json}": [
+    "prettier --write"
+  ],
+{{/if}}
+{{#if isEslint}}
+  "*.{ts,html}": [
+    "eslint --fix"
+  ]
+{{/if}}
+}

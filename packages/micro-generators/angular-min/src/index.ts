@@ -35,8 +35,15 @@ export const createSchema = ({ projectFolder }: IOptions) => {
     },
   })
 
+  // TODO: remove property instead
+  schema.addJsonFileProperty('angular.json', {
+    path: ['projects', projectFolder, 'architect', 'e2e'],
+    value: 'not implemented',
+  })
+
   schema.addCommand({
-    command: 'rm -rf e2e karma.conf.js tslint.json README.md src/test.ts',
+    command:
+      'rm -rf e2e karma.conf.js tslint.json README.md src/test.ts .browserslistrc .editorconfig',
     successMessage: '[fs][remove files] project files',
     priority: 97,
     shouldRunInProject: true,

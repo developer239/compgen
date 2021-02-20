@@ -3,9 +3,10 @@ import { AppType, builder } from '@compgen/core'
 
 interface IOptions {
   appType: AppType
+  projectFolder: string
 }
 
-export const createSchema = ({ appType }: IOptions) => {
+export const createSchema = ({ appType, projectFolder }: IOptions) => {
   const schema = builder('eslint')
 
   const dependenciesShared = [
@@ -41,6 +42,29 @@ export const createSchema = ({ appType }: IOptions) => {
 
       schema.addDevDependencies(dependencies)
       schema.addScript('lint:ts', 'eslint --ext .ts src')
+
+      break
+    }
+    case AppType.ANGULAR: {
+      const dependenciesAngular = [
+        'eslint',
+        '@angular-eslint/builder',
+        '@linters/eslint-config-angular',
+        '@linters/eslint-config-jest',
+      ]
+
+      schema.addDevDependencies(dependenciesAngular)
+      schema.addScript('lint:ts', 'ng lint')
+
+      schema.addJsonFileProperty('angular.json', {
+        path: ['projects', projectFolder, 'architect', 'lint'],
+        value: {
+          builder: '@angular-eslint/builder:lint',
+          options: {
+            lintFilePatterns: ['src/**/*.ts', 'src/**/*.component.html'],
+          },
+        },
+      })
 
       break
     }

@@ -48,6 +48,7 @@ export const askAppType = async (): Promise<AppType> => {
     message: 'What application are you working on?',
     choices: [
       { name: 'React', value: AppType.REACT },
+      { name: 'Angular', value: AppType.ANGULAR },
       { name: 'React Native', value: AppType.REACT_NATIVE },
       { name: 'Node.js (Express, Nest.js, ...)', value: AppType.NODE },
     ],

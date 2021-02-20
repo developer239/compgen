@@ -1,0 +1,18 @@
+{
+  "*.{ts,tsx}": [
+{{#if isEslint}}
+    "eslint --fix",
+{{/if}}
+{{#if isPrettier}}
+    "prettier --write",
+{{/if}}
+{{#if isStylelint}}
+    "stylelint"
+{{/if}}
+  ],
+{{#if isPrettier}}
+  "*.{md,json}": [
+    "prettier --write"
+  ]
+{{/if}}
+}

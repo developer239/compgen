@@ -17,14 +17,45 @@ export const createSchema = ({
   const schema = builder('git-hooks')
   schema.addFolder({
     label: 'git-hooks',
-    source: path.join(__dirname, 'templates'),
-    context: {
-      isPrettier,
-      isEslint,
-      isStylelint,
-      isWeb: appType === AppType.REACT,
-    },
+    source: path.join(__dirname, 'templates', 'base'),
   })
+
+  switch (appType) {
+    case AppType.REACT_NATIVE:
+    case AppType.REACT:
+      schema.addFolder({
+        label: 'git-hooks',
+        source: path.join(__dirname, 'templates', 'react-and-react-native'),
+        context: {
+          isPrettier,
+          isEslint,
+          isStylelint,
+        },
+      })
+      break
+    case AppType.NODE:
+      schema.addFolder({
+        label: 'git-hooks',
+        source: path.join(__dirname, 'templates', 'node'),
+        context: {
+          isPrettier,
+          isEslint,
+        },
+      })
+      break
+    case AppType.ANGULAR:
+      schema.addFolder({
+        label: 'git-hooks',
+        source: path.join(__dirname, 'templates', 'angular'),
+        context: {
+          isPrettier,
+          isEslint,
+          isStylelint,
+        },
+      })
+      break
+  }
+
   schema.addDevDependencies([
     'husky',
     'lint-staged',

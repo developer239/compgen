@@ -9,7 +9,7 @@ export interface IOptions {
 }
 
 export const createSchema = ({ projectFolder }: IOptions) => {
-  const appType = AppType.REACT
+  const appType = AppType.ANGULAR
 
   const schema = builder('angular')
 
@@ -19,7 +19,7 @@ export const createSchema = ({ projectFolder }: IOptions) => {
     })
   )
   schema.combineSchema(createBrowserlistSchema())
-  schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(createCodeQualitySchema({ appType, projectFolder }))
   schema.combineSchema(
     createGitHooksSchema({
       appType,

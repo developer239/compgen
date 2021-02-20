@@ -5,7 +5,21 @@ interface IOptions {
   hasPrettier: boolean
 }
 
-export const createCommonSchema = ({ hasPrettier }: IOptions) => {
+export const createSchemaForAngular = () => {
+  const schema = builder('stylelint')
+  schema.addScript('lint:css', "stylelint 'src/**/*.scss' --syntax scss")
+
+  schema.addFolder({
+    label: 'stylelint',
+    source: path.join(__dirname, 'templates/angular'),
+  })
+
+  schema.addDevDependencies(['stylelint', '@linters/stylelint-scss-config'])
+
+  return schema.toJson()
+}
+
+export const createCommonReactSchema = ({ hasPrettier }: IOptions) => {
   const schema = builder('stylelint')
   schema.addScript('lint:css', "stylelint '**/*.{ts,tsx}'")
   schema.addDevDependencies(['stylelint'])
@@ -17,8 +31,8 @@ export const createCommonSchema = ({ hasPrettier }: IOptions) => {
   return schema
 }
 
-export const createSchemaForWeb = (options: IOptions) => {
-  const schema = createCommonSchema(options)
+export const createSchemaForReact = (options: IOptions) => {
+  const schema = createCommonReactSchema(options)
 
   schema.addFolder({
     label: 'stylelint',
@@ -30,8 +44,8 @@ export const createSchemaForWeb = (options: IOptions) => {
   return schema.toJson()
 }
 
-export const createSchemaForMobile = (options: IOptions) => {
-  const schema = createCommonSchema(options)
+export const createSchemaForReactNative = (options: IOptions) => {
+  const schema = createCommonReactSchema(options)
 
   schema.addFolder({
     label: 'stylelint',
