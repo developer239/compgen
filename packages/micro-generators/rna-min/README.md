@@ -20,16 +20,16 @@ You have to generate JSON schema and use `execute` function from `@compgen/core`
 
 ```ts
 // src/index.ts
-import { execute, askProjectName } from '@compgen/core'
+import { execute, askProjectName, toAlphanumeric } from '@compgen/core'
 import { createSchema } from '@compgen/rna-min'
 
 const generate = async () => {
   const projectInfo = await askProjectName()
   const projectFolder = projectInfo.projectFolder
 
-  const schema = createSchema({ projectFolder })
+  const schema = createSchema({ projectFolder: toAlphanumeric(projectFolder) })
 
-  await execute(schema, projectFolder)
+  await execute(schema, toAlphanumeric(projectFolder))
 }
 
 generate()

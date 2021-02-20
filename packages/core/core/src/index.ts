@@ -41,3 +41,4 @@ export {
   CIType,
   DatabaseType,
 } from './types'
+export { toAlphanumeric } from './helpers/text'

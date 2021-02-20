@@ -5,9 +5,6 @@ interface IOptions {
   projectFolder: string
 }
 
-const formatRNAName = (projectFolder: string) =>
-  projectFolder.replace(/[^0-9a-z]/giu, '')
-
 export const createSchema = ({ projectFolder }: IOptions) => {
   const schema = builder('rna-min')
 
@@ -20,9 +17,7 @@ export const createSchema = ({ projectFolder }: IOptions) => {
   })
 
   schema.addCommand({
-    command: `npx react-native init ${formatRNAName(
-      projectFolder
-    )} --version 0.61.5`,
+    command: `npx react-native init ${projectFolder} --version 0.61.5`,
     successMessage: '[create react app] initialize',
     priority: 99,
   })
