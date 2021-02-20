@@ -26,6 +26,7 @@ Multiple micro generators composed into robust generators. These generators are 
 | Macro | [@compgen/cra](packages/macro-generators/cra)                   | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
 | Macro | [@compgen/nest](packages/macro-generators/nest)                 | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
 | Macro | [@compgen/next](packages/macro-generators/next)                 | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
+| Macro | [@compgen/rna](packages/macro-generators/rna)                   | [![@compgen/rna][rna-badge]][rna-npm]                       |
 
 ## Micro Generators
 
@@ -138,6 +139,8 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [nest-npm]: https://badge.fury.io/js/%40compgen%2Fnest-min
 [next-badge]: https://badge.fury.io/js/%40compgen%2Fnext-min.svg
 [next-npm]: https://badge.fury.io/js/%40compgen%2Fnext-min
+[rna-badge]: https://badge.fury.io/js/%40compgen%2Frna.svg
+[rna-npm]: https://badge.fury.io/js/%40compgen%2Frna
 [prettier-badge]: https://badge.fury.io/js/%40compgen%2Fprettier.svg
 [prettier-npm]: https://badge.fury.io/js/%40compgen%2Fprettier
 [rna-min-badge]: https://badge.fury.io/js/%40compgen%2Frna-min.svg
