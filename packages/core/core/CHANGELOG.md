@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/developer239/compgen/compare/@compgen/core@0.3.0...@compgen/core@0.3.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* validate rna name correctly ([9dae009](https://github.com/developer239/compgen/commit/9dae009420ec4d599ab7b358932c42d6945faa91))
+
+
+
+
+
 # [0.3.0](https://github.com/developer239/compgen/compare/@compgen/core@0.2.0...@compgen/core@0.3.0) (2021-02-20)
 
 

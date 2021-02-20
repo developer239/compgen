@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/developer239/compgen/compare/@compgen/stylelint@0.2.0...@compgen/stylelint@0.2.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* reference correct template folders ([8f32e4a](https://github.com/developer239/compgen/commit/8f32e4aca2ca5e1055403eb25dbe5d7727549b1d))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/compgen/compare/@compgen/stylelint@0.1.3...@compgen/stylelint@0.2.0) (2021-02-20)
 
 
