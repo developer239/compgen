@@ -11,7 +11,7 @@ export interface IOptions {
 }
 
 export const createSchema = ({ projectFolder, isHeroku }: IOptions) => {
-  const appType = AppType.WEB
+  const appType = AppType.REACT
 
   const schema = builder('nextjs')
 

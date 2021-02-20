@@ -22,7 +22,7 @@ export const createSchema = ({
       isPrettier,
       isEslint,
       isStylelint,
-      isWeb: appType === AppType.WEB,
+      isWeb: appType === AppType.REACT,
     },
   })
   schema.addDevDependencies([

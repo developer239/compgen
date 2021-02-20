@@ -47,8 +47,8 @@ export const askAppType = async (): Promise<AppType> => {
     type: 'list',
     message: 'What application are you working on?',
     choices: [
-      { name: 'Web (React, Angular)', value: AppType.WEB },
-      { name: 'Mobile (React Native)', value: AppType.MOBILE },
+      { name: 'React', value: AppType.REACT },
+      { name: 'React Native', value: AppType.REACT_NATIVE },
       { name: 'Node.js (Express, Nest.js, ...)', value: AppType.NODE },
     ],
   })
@@ -56,14 +56,16 @@ export const askAppType = async (): Promise<AppType> => {
   return answer
 }
 
-export const askAppTypeFE = async (): Promise<AppType.WEB | AppType.MOBILE> => {
+export const askAppTypeFE = async (): Promise<
+  AppType.REACT | AppType.REACT_NATIVE
+> => {
   const { answer } = await inquirer.prompt({
     name: 'answer',
     type: 'list',
     message: 'What application are you working on?',
     choices: [
-      { name: 'Web (React, Angular)', value: AppType.WEB },
-      { name: 'Mobile (React Native)', value: AppType.MOBILE },
+      { name: 'React', value: AppType.REACT },
+      { name: 'React Native', value: AppType.REACT_NATIVE },
     ],
   })
 

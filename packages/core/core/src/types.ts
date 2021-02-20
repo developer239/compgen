@@ -1,7 +1,22 @@
 export enum AppType {
-  WEB = 'web', // TODO: rename to react
-  MOBILE = 'mobile', // TODO: rename to react-native
+  REACT = 'react',
+  REACT_NATIVE = 'react-native',
   NODE = 'node',
+}
+
+export enum CDType {
+  NONE = 'none',
+  HEROKU = 'heroku',
+}
+
+export enum CIType {
+  NONE = 'none',
+  ACTIONS = 'github_actions',
+}
+
+export enum DatabaseType {
+  NONE = 'none',
+  SQL = 'sql',
 }
 
 export interface ISchemaCommand {
@@ -43,19 +58,4 @@ export interface ISchema {
       prod: string[] // move to dev dependencies
     }
   }
-}
-
-export enum CDType {
-  NONE = 'none',
-  HEROKU = 'heroku',
-}
-
-export enum CIType {
-  NONE = 'none',
-  ACTIONS = 'github_actions',
-}
-
-export enum DatabaseType {
-  NONE = 'none',
-  SQL = 'sql',
 }

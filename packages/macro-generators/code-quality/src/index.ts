@@ -19,11 +19,11 @@ export const createSchema = ({ appType }: IOptions) => {
   schema.combineSchema(createPrettierSchema({ appType }))
   schema.combineSchema(createEslintSchema({ appType }))
 
-  if (AppType.MOBILE) {
+  if (AppType.REACT) {
     schema.combineSchema(createStylelintSchemaForWeb({ hasPrettier }))
   }
 
-  if (AppType.WEB) {
+  if (AppType.REACT_NATIVE) {
     schema.combineSchema(createStylelintSchemaForMobile({ hasPrettier }))
   }
 

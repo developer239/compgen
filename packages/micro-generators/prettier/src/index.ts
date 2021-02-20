@@ -9,7 +9,7 @@ export const createSchema = ({ appType }: { appType: AppType }) => {
     source: path.join(__dirname, 'templates'),
   })
 
-  if (appType === 'node') {
+  if (appType === AppType.NODE) {
     schema.addScript('format', "prettier --write '*/**/*.{ts,md,json}'")
   } else {
     schema.addScript('format', "prettier --write '*/**/*.{ts,tsx,css,md,json}'")

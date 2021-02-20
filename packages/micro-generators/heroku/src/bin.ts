@@ -13,7 +13,7 @@ const run = async () => {
   // TODO: ask only if web/node
   const appType = await askAppType()
 
-  if (appType === AppType.MOBILE) {
+  if (appType === AppType.REACT_NATIVE) {
     return logger.error(`${appType} not supported`)
   }
 
@@ -29,7 +29,7 @@ const run = async () => {
 
   if (appType === AppType.NODE) {
     isDatabase = await askPostgreAddon()
-  } else {
+  } else if (appType === AppType.REACT) {
     isCRA = await askIsCRA()
   }
 

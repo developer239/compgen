@@ -8,12 +8,6 @@ interface IOptions {
 export const createSchema = ({ appType }: IOptions) => {
   const schema = builder('eslint')
 
-  if (appType === AppType.NODE) {
-    schema.addScript('lint:ts', 'eslint --ext .ts src')
-  } else {
-    schema.addScript('lint:ts', 'eslint --ext .ts,.tsx src')
-  }
-
   const dependenciesShared = [
     'eslint',
     'eslint-plugin-import',
@@ -21,24 +15,33 @@ export const createSchema = ({ appType }: IOptions) => {
     '@linters/eslint-config-jest',
     'eslint-config-prettier',
   ]
-  const dependenciesMobile = ['@linters/eslint-config-react-native']
-  const dependenciesWeb = ['@linters/eslint-config-react']
-  const dependenciesNode = ['@linters/eslint-config-node']
 
   switch (appType) {
-    case AppType.MOBILE: {
+    case AppType.REACT_NATIVE: {
+      const dependenciesMobile = ['@linters/eslint-config-react-native']
       const dependencies = [...dependenciesShared, ...dependenciesMobile]
+
       schema.addDevDependencies(dependencies)
+      schema.addScript('lint:ts', 'eslint --ext .ts,.tsx src')
+
       break
     }
-    case AppType.WEB: {
+    case AppType.REACT: {
+      const dependenciesWeb = ['@linters/eslint-config-react']
       const dependencies = [...dependenciesShared, ...dependenciesWeb]
+
       schema.addDevDependencies(dependencies)
+      schema.addScript('lint:ts', 'eslint --ext .ts,.tsx src')
+
       break
     }
     case AppType.NODE: {
+      const dependenciesNode = ['@linters/eslint-config-node']
       const dependencies = [...dependenciesShared, ...dependenciesNode]
+
       schema.addDevDependencies(dependencies)
+      schema.addScript('lint:ts', 'eslint --ext .ts src')
+
       break
     }
   }

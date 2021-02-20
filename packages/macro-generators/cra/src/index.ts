@@ -16,7 +16,7 @@ export const createSchema = ({
   isRouter,
   isHeroku,
 }: IOptions) => {
-  const appType = AppType.WEB
+  const appType = AppType.REACT
 
   const schema = builder('cra')
 
