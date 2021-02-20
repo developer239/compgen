@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.1.6...@compgen/nest-min@0.2.0) (2021-02-20)
+
+
+### Features
+
+* support angular in code quality tools ([115bad0](https://github.com/developer239/compgen/commit/115bad0e04e490152dcf57341ae2a3c6112f6e2d))
+
+
+
+
+
 ## [0.1.6](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.1.5...@compgen/nest-min@0.1.6) (2021-02-20)
 
 **Note:** Version bump only for package @compgen/nest-min

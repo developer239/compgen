@@ -1,6 +1,6 @@
 {
   "name": "@compgen/cra-min",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -12,7 +12,7 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.4.0"
+    "@compgen/core": "^0.5.0"
   },
   "publishConfig": {
     "access": "public"
