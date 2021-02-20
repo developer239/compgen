@@ -55,6 +55,7 @@ export const createSchema = ({ projectFolder, isRouter }: IOptions) => {
   schema.removeJsonFileProperty('package.json', ['scripts', 'eject'])
   schema.removeJsonFileProperty('package.json', ['scripts', 'start'])
 
+  schema.addScript('start', 'npx serve -s build -l 4000')
   schema.addScript('dev', 'react-scripts start')
 
   schema.addFolder({
