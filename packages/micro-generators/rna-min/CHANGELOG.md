@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/developer239/compgen/compare/@compgen/rna-min@0.2.0...@compgen/rna-min@0.2.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* remove unused e2e folder ([dacd7d4](https://github.com/developer239/compgen/commit/dacd7d45fbd3d7419ead708ccf0b2717bcdf16d6))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/compgen/compare/@compgen/rna-min@0.1.1...@compgen/rna-min@0.2.0) (2021-02-20)
 
 
