@@ -128,8 +128,6 @@ const projectFolder = '.'
 execute(createWebCodeQualitySchema(), projectFolder)
 ```
 
-[angular-badge]: https://badge.fury.io/js/%40compgen%2Fangular.svg
-[angularn-npm]: https://badge.fury.io/js/%40compgen%2Fangular
 [angular-min-badge]: https://badge.fury.io/js/%40compgen%2Fangular-min.svg
 [angular-min-npm]: https://badge.fury.io/js/%40compgen%2Fangular-min
 [core-badge]: https://badge.fury.io/js/%40compgen%2Fcore.svg
@@ -168,3 +166,5 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [nest-full-npm]: https://badge.fury.io/js/%40compgen%2Fnest
 [next-full-badge]: https://badge.fury.io/js/%40compgen%2Fnext.svg
 [next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnext
+[angular-badge]: https://badge.fury.io/js/%40compgen%2Fangular.svg
+[angular-npm]: https://badge.fury.io/js/%40compgen%2Fangular
