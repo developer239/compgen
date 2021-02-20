@@ -5,7 +5,8 @@ interface IOptions {
   projectFolder: string
 }
 
-const formatRNAName = (projectFolder: string) => projectFolder.replace('-', '')
+const formatRNAName = (projectFolder: string) =>
+  projectFolder.replace(/[^0-9a-z]/giu, '')
 
 export const createSchema = ({ projectFolder }: IOptions) => {
   const schema = builder('rna-min')
