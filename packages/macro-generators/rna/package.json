@@ -1,6 +1,6 @@
 {
   "name": "@compgen/rna",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -15,7 +15,7 @@
     "@compgen/code-quality": "^0.2.1",
     "@compgen/core": "^0.3.1",
     "@compgen/git-hooks": "^0.3.1",
-    "@compgen/rna-min": "^0.1.1"
+    "@compgen/rna-min": "^0.2.0"
   },
   "publishConfig": {
     "access": "public"
