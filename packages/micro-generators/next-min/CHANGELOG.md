@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/developer239/compgen/compare/@compgen/next-min@0.1.3...@compgen/next-min@0.1.4) (2021-02-20)
+
+
+### Bug Fixes
+
+* absolute paths in nextjs templates ([b7fe8fb](https://github.com/developer239/compgen/commit/b7fe8fbed6d6941712c7ef15b90d71c68fccddc1))
+* linting issues ([a37a43b](https://github.com/developer239/compgen/commit/a37a43b765fceb0a4331a9affa09090d2d7a4a4e))
+
+
+
+
+
 ## [0.1.3](https://github.com/developer239/compgen/compare/@compgen/next-min@0.1.2...@compgen/next-min@0.1.3) (2021-02-19)
 
 **Note:** Version bump only for package @compgen/next-min

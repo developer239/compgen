@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/developer239/compgen/compare/@compgen/core@0.2.0...@compgen/core@0.3.0) (2021-02-20)
+
+
+### Bug Fixes
+
+* remove scripts first then add scripts ([a4e4e4e](https://github.com/developer239/compgen/commit/a4e4e4e7ac664352b3c138ae3f4d4531bd23f18e))
+
+
+### Features
+
+* create react native micro generator ([eacf85a](https://github.com/developer239/compgen/commit/eacf85a577023a23e1f6501418d1cc152115ed60))
+* prepare AppType for new frameworks ([f38c913](https://github.com/developer239/compgen/commit/f38c913f37d6e353648acab3393ac9678c245c30))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/compgen/compare/@compgen/core@0.1.3...@compgen/core@0.2.0) (2021-02-19)
 
 
