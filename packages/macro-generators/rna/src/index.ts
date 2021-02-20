@@ -14,7 +14,7 @@ export interface IOptions {
 export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
   const appType = AppType.REACT_NATIVE
 
-  const schema = builder('cra')
+  const schema = builder('rna')
 
   schema.combineSchema(
     createRNASchema({
