@@ -16,38 +16,45 @@ Use these to build your own generators.
 | ------------ | ----------------------------------- | ---------------------------------------- |
 | Library Core | [@compgen/core](packages/core/core) | [![@compgen/core][core-badge]][core-npm] |
 
-## Generators
+## Full App Generators
+
+These will create whole application setup.
+
+| Type             | Package                                         | Version                                                     |
+| ---------------- | ----------------------------------------------- | ----------------------------------------------------------- |
+| Create React App | [@compgen/cra](packages/macro-generators/cra)   | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
+| Nest.js          | [@compgen/nest](packages/macro-generators/nest) | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
+| Next.js          | [@compgen/next](packages/macro-generators/next) | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
+| React Native     | [@compgen/rna](packages/macro-generators/rna)   | [![@compgen/rna][rna-badge]][rna-npm]                       |
+
+## Macro Generators
 
 Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup.
 
-| Type  | Package                                                         | Version                                                     |
-| ----- | --------------------------------------------------------------- | ----------------------------------------------------------- |
-| Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm]                |
-| Macro | [@compgen/cra](packages/macro-generators/cra)                   | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
-| Macro | [@compgen/nest](packages/macro-generators/nest)                 | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
-| Macro | [@compgen/next](packages/macro-generators/next)                 | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
-| Macro | [@compgen/rna](packages/macro-generators/rna)                   | [![@compgen/rna][rna-badge]][rna-npm]                       |
+| Type  | Package                                                         | Version                                      |
+| ----- | --------------------------------------------------------------- | -------------------------------------------- |
+| Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm] |
 
 ## Micro Generators
 
 You can easily selectively add code quality tools and other useful libraries to your existing codebase.
 
-| Type  | Package                                                           | Version                                                 |
-| ----- | ----------------------------------------------------------------- | ------------------------------------------------------- |
-| Micro | [@compgen/browserlist](packages/micro-generators/browserlist)     | [![@compgen/browserlist][bl-badge]][bl-npm]             |
-| Micro | [@compgen/cra-min](packages/micro-generators/cra-min)             | [![@compgen/cra-min][cra-badge]][cra-npm]               |
-| Micro | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm]           |
-| Micro | [@compgen/eslint](packages/micro-generators/eslint)               | [![@compgen/eslint][es-badge]][es-npm]                  |
-| Micro | [@compgen/git-hooks](packages/micro-generators/git-hooks)         | [![@compgen/git-hooks][gh-badge]][gh-npm]               |
-| Micro | [@compgen/heroku](packages/micro-generators/heroku)               | [![@compgen/heroku][he-badge]][he-npm]                  |
-| Micro | [@compgen/nest-min](packages/micro-generators/nest-min)           | [![@compgen/nest-min][nest-badge]][nest-npm]            |
-| Micro | [@compgen/next-min](packages/micro-generators/next-min)           | [![@compgen/next-min][next-badge]][next-npm]            |
-| Micro | [@compgen/prettier](packages/micro-generators/prettier)           | [![@compgen/prettier][prettier-badge]][prettier-npm]    |
-| Micro | [@compgen/rna-min](packages/micro-generators/rna-min)             | [![@compgen/rna-min][rna-min-badge]][rna-min-npm]       |
-| Micro | [@compgen/stylelint](packages/micro-generators/stylelint)         | [![@compgen/stylelint][stylelint-badge]][stylelint-npm] |
-| Micro | [@compgen/ts-node](packages/micro-generators/ts-node)             | [![@compgen/ts-node][tsnode-badge]][tsnode-npm]         |
+| Type         | Package                                                           | Version                                                 |
+| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------- |
+| Application  | [@compgen/cra-min](packages/micro-generators/cra-min)             | [![@compgen/cra-min][cra-badge]][cra-npm]               |
+| Application  | [@compgen/nest-min](packages/micro-generators/nest-min)           | [![@compgen/nest-min][nest-badge]][nest-npm]            |
+| Application  | [@compgen/next-min](packages/micro-generators/next-min)           | [![@compgen/next-min][next-badge]][next-npm]            |
+| Application  | [@compgen/rna-min](packages/micro-generators/rna-min)             | [![@compgen/rna-min][rna-min-badge]][rna-min-npm]       |
+| Application  | [@compgen/ts-node](packages/micro-generators/ts-node)             | [![@compgen/ts-node][tsnode-badge]][tsnode-npm]         |
+| Deployment   | [@compgen/heroku](packages/micro-generators/heroku)               | [![@compgen/heroku][he-badge]][he-npm]                  |
+| Code Quality | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm]           |
+| Code Quality | [@compgen/browserlist](packages/micro-generators/browserlist)     | [![@compgen/browserlist][bl-badge]][bl-npm]             |
+| Code Quality | [@compgen/eslint](packages/micro-generators/eslint)               | [![@compgen/eslint][es-badge]][es-npm]                  |
+| Code Quality | [@compgen/stylelint](packages/micro-generators/stylelint)         | [![@compgen/stylelint][stylelint-badge]][stylelint-npm] |
+| Code Quality | [@compgen/prettier](packages/micro-generators/prettier)           | [![@compgen/prettier][prettier-badge]][prettier-npm]    |
+| Code Quality | [@compgen/git-hooks](packages/micro-generators/git-hooks)         | [![@compgen/git-hooks][gh-badge]][gh-npm]               |
 
-## Examples
+## Programmable Examples
 
 ### Minimal micro generator
 
