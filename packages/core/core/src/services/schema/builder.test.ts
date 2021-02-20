@@ -17,6 +17,7 @@ describe('[services][schema] builder', () => {
         move: {
           prod: [],
         },
+        remove: [],
       },
       files: {
         add: [],
@@ -65,6 +66,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -93,6 +95,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -123,6 +126,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -149,6 +153,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: ['first-dependency', 'second', 'third-added-later'],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -183,6 +188,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -233,6 +239,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -266,6 +273,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -305,6 +313,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [],
@@ -342,6 +351,7 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
+          remove: [],
         },
         files: {
           add: [
@@ -349,7 +359,7 @@ describe('[services][schema] builder', () => {
               context: {
                 projectName: 'some-name',
               },
-              name: 'path/to/dest',
+              label: 'path/to/dest',
               source: 'path/to/source',
             },
           ],
