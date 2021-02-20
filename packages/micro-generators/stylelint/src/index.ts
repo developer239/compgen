@@ -22,7 +22,7 @@ export const createSchemaForWeb = (options: IOptions) => {
 
   schema.addFolder({
     label: 'stylelint',
-    source: path.join(__dirname, 'templates/web'),
+    source: path.join(__dirname, 'templates/react'),
   })
 
   schema.addDevDependencies(['@linters/stylelint-css-in-js-config'])
@@ -35,7 +35,7 @@ export const createSchemaForMobile = (options: IOptions) => {
 
   schema.addFolder({
     label: 'stylelint',
-    source: path.join(__dirname, 'templates/mobile'),
+    source: path.join(__dirname, 'templates/react-native'),
   })
 
   schema.addDevDependencies([
