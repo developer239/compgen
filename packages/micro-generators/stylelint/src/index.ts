@@ -21,7 +21,7 @@ export const createSchemaForWeb = (options: IOptions) => {
   const schema = createCommonSchema(options)
 
   schema.addFolder({
-    name: 'stylelint',
+    label: 'stylelint',
     source: path.join(__dirname, 'templates/web'),
   })
 
@@ -34,7 +34,7 @@ export const createSchemaForMobile = (options: IOptions) => {
   const schema = createCommonSchema(options)
 
   schema.addFolder({
-    name: 'stylelint',
+    label: 'stylelint',
     source: path.join(__dirname, 'templates/mobile'),
   })
 

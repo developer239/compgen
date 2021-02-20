@@ -5,10 +5,7 @@ import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { logger } from '../logger'
-import {
-  addDependencies,
-  moveToDevDependencies,
-} from '../shell/dependencies'
+import { addDependencies, moveToDevDependencies } from '../shell/dependencies'
 import { execWithSpinner } from '../shell/exec'
 import { execInProjectWithSpinner } from '../shell/execProject'
 import { updateJson } from '../updateJson'
@@ -37,7 +34,7 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
 
     for (const template of schema.files.add) {
       await createFilesFromFolder({
-        name: template.name,
+        name: template.label,
         projectFolder,
         source: template.source,
         context: template.context,
@@ -48,7 +45,7 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
     // Update json files
     //
 
-    for(const file of Object.keys(schema.jsonFiles)) {
+    for (const file of Object.keys(schema.jsonFiles)) {
       await updateJson(
         {
           projectFolder,
@@ -64,7 +61,10 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
 
           if (propertiesToAdd) {
             for (const property of propertiesToAdd) {
-              updatedContent = addProperty(property.path, property.value)(updatedContent)
+              updatedContent = addProperty(
+                property.path,
+                property.value
+              )(updatedContent)
             }
           }
 
@@ -103,7 +103,7 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
     })
 
     logger.success('Success')
-  } catch(error) {
+  } catch (error) {
     logger.error('Something went wrong.')
     logger.error(error)
   }

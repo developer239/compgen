@@ -40,7 +40,7 @@ export const createSchema = ({ projectFolder, isDatabase }: IOptions) => {
   schema.addScript('nestjs-postbuild', 'npm run build')
 
   schema.addFolder({
-    name: 'nest.js base',
+    label: 'nest.js base',
     source: path.join(__dirname, 'templates/base'),
     context: {
       isDatabase,
@@ -58,7 +58,7 @@ export const createSchema = ({ projectFolder, isDatabase }: IOptions) => {
     schema.addDevDependencies(['@types/pg-connection-string'])
 
     schema.addFolder({
-      name: 'nest.js base',
+      label: 'nest.js base',
       source: path.join(__dirname, 'templates/typeorm'),
       context: {
         isDatabase,

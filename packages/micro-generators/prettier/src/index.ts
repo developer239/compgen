@@ -5,7 +5,7 @@ export const createSchema = ({ appType }: { appType: AppType }) => {
   const schema = builder('prettier')
 
   schema.addFolder({
-    name: 'prettier',
+    label: 'prettier',
     source: path.join(__dirname, 'templates'),
   })
 

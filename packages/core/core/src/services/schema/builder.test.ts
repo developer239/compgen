@@ -315,7 +315,7 @@ describe('[services][schema] builder', () => {
               ['scripts', 'lint'],
               ['scripts', 'prettier'],
             ],
-          }
+          },
         },
       })
     })
@@ -327,7 +327,7 @@ describe('[services][schema] builder', () => {
 
       const schema = builder(name)
       schema.addFolder({
-        name: 'path/to/dest',
+        label: 'path/to/dest',
         source: 'path/to/source',
         context: { projectName: name },
       })
@@ -355,8 +355,7 @@ describe('[services][schema] builder', () => {
           ],
         },
         name: 'some-name',
-        jsonFiles: {
-        },
+        jsonFiles: {},
       })
     })
   })

@@ -44,7 +44,7 @@ export const createSchema = ({ appType }: IOptions) => {
   }
 
   schema.addFolder({
-    name: 'eslint',
+    label: 'eslint',
     source: path.join(__dirname, 'templates', appType),
   })
 

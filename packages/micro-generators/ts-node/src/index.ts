@@ -13,7 +13,7 @@ export const createSchema = () => {
   ])
 
   schema.addFolder({
-    name: 'ts-node',
+    label: 'ts-node',
     source: path.join(__dirname, 'templates'),
   })
 

@@ -12,7 +12,7 @@ export interface ISchemaCommand {
 }
 
 export interface ISchemaAddFile {
-  name: string
+  label: string
   source: string
   context?: { [key: string]: string | number | boolean }
 }

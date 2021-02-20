@@ -4,7 +4,7 @@ import { builder } from '@compgen/core'
 export const createSchema = () => {
   const schema = builder('browserlist')
   schema.addFolder({
-    name: 'browserlist',
+    label: 'browserlist',
     source: path.join(__dirname, 'templates'),
   })
 

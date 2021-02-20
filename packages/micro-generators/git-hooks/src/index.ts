@@ -16,7 +16,7 @@ export const createSchema = ({
 }: IOptions) => {
   const schema = builder('git-hooks')
   schema.addFolder({
-    name: 'git-hooks',
+    label: 'git-hooks',
     source: path.join(__dirname, 'templates'),
     context: {
       isPrettier,

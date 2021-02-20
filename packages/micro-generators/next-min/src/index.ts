@@ -30,7 +30,7 @@ export const createSchema = ({ projectFolder }: IOptions) => {
   ])
 
   schema.addFolder({
-    name: 'nextjs',
+    label: 'nextjs',
     source: path.join(__dirname, 'templates'),
     context: {
       projectFolder,

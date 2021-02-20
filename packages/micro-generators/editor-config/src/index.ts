@@ -4,7 +4,7 @@ import { builder } from '@compgen/core'
 export const createSchema = () => {
   const schema = builder('editorconfig')
   schema.addFolder({
-    name: 'editorconfig',
+    label: 'editorconfig',
     source: path.join(__dirname, 'templates'),
   })
 

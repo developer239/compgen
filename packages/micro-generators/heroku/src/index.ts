@@ -24,7 +24,7 @@ export const createSchema = ({
   }
 
   schema.addFolder({
-    name: 'heroku',
+    label: 'heroku',
     source: path.join(__dirname, 'templates', appType),
     context: {
       projectName,

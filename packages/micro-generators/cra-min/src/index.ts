@@ -6,10 +6,7 @@ interface IOptions {
   isRouter: boolean
 }
 
-export const createSchema = ({
-  projectFolder,
-  isRouter,
-}: IOptions) => {
+export const createSchema = ({ projectFolder, isRouter }: IOptions) => {
   const schema = builder('create-react-app')
   schema.addCommand({
     command: `npx create-react-app ${projectFolder} --template typescript`,
@@ -61,7 +58,7 @@ export const createSchema = ({
   schema.addScript('dev', 'react-scripts start')
 
   schema.addFolder({
-    name: 'create react app base',
+    label: 'create react app base',
     source: path.join(__dirname, 'templates/base'),
     context: {
       projectFolder,
@@ -73,7 +70,7 @@ export const createSchema = ({
     schema.addDevDependencies(['@types/react-router-dom'])
 
     schema.addFolder({
-      name: 'create react app router',
+      label: 'create react app router',
       source: path.join(__dirname, 'templates/react-router'),
       context: {
         projectFolder,
