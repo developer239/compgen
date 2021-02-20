@@ -5,7 +5,6 @@ export { askNavigationType } from './prompt'
 
 export enum NavigationType {
   NONE = 'NONE',
-  REACT_NATIVE_NAVIGATION = 'REACT_NATIVE_NAVIGATION',
   REACT_NAVIGATION = 'REACT_NAVIGATION',
 }
 
@@ -52,6 +51,7 @@ export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
   schema.addScript('start', 'react-native start --reset-cache')
   schema.addScript('start:android', 'react-native run-android')
   schema.addScript('start:ios', 'react-native run-ios')
+  schema.addScript('postinstall', 'pod install --project-directory=ios')
 
   schema.addDependencies(['styled-components'])
   schema.addDevDependencies([
@@ -86,6 +86,7 @@ export const createSchema = ({ projectFolder, navigationType }: IOptions) => {
           projectFolder,
         },
       })
+      break
   }
 
   return schema.toJson()

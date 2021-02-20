@@ -8,10 +8,6 @@ export const askNavigationType = async (): Promise<NavigationType> => {
     message: 'Do you want to use navigation?',
     choices: [
       { name: 'None', value: NavigationType.NONE },
-      {
-        name: 'React Native Navigation (WIX)',
-        value: NavigationType.REACT_NATIVE_NAVIGATION,
-      },
       { name: 'React Navigation', value: NavigationType.REACT_NAVIGATION },
     ],
   })
