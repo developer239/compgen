@@ -22,11 +22,19 @@ export const builder = (name: string) => {
       move: {
         prod: [],
       },
+      remove: [],
     },
   } as ISchema
 
   const addCommand = (command: ISchemaCommand) => {
     schema.commands = [...schema.commands, command]
+  }
+
+  const removeDependencies = (dependencies: string[]) => {
+    schema.dependencies.remove = [
+      ...schema.dependencies.remove,
+      ...dependencies,
+    ]
   }
 
   const addDependencies = (dependencies: string[]) => {
@@ -64,10 +72,7 @@ export const builder = (name: string) => {
     }
   }
 
-  const removeJsonFileProperty = (
-    file: string,
-    pathToProperty: string[]
-  ) => {
+  const removeJsonFileProperty = (file: string, pathToProperty: string[]) => {
     const targetFile = schema.jsonFiles[file]
 
     if (targetFile?.remove) {
@@ -100,6 +105,7 @@ export const builder = (name: string) => {
 
   return {
     addCommand,
+    removeDependencies,
     addDependencies,
     addDevDependencies,
     moveDependencies,

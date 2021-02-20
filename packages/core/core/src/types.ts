@@ -57,5 +57,6 @@ export interface ISchema {
     move: {
       prod: string[] // move to dev dependencies
     }
+    remove: string[]
   }
 }

@@ -6,44 +6,45 @@
 
 _@compgen_ is an alternative to Yeoman and other libraries that help you to kickstart new projects, prescribe best practices and configure tools to help you stay productive.
 
-This library is unique though because **_@compgen_ generators are small and composable**. You can use generators separately to create small chunks of code, or you can compose them together so that you can create bigger and more opinionated codebase. 
+This library is unique though because **_@compgen_ generators are small and composable**. You can use generators separately to create small chunks of code, or you can compose them together so that you can create bigger and more opinionated codebase.
 
 ## Core Packages
 
 Use these to build your own generators.
 
-|Type          | Package                                         | Version                                       | 
-|------------- | ----------------------------------------------- | ----------------------------------------------
-|Library Core  | [@compgen/core](packages/core/core) | [![@compgen/core][core-badge]][core-npm] |  
+| Type         | Package                             | Version                                  |
+| ------------ | ----------------------------------- | ---------------------------------------- |
+| Library Core | [@compgen/core](packages/core/core) | [![@compgen/core][core-badge]][core-npm] |
 
 ## Generators
 
 Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup.
 
-|Type          | Package                                         | Version                                       | 
-|------------- | ----------------------------------------------- | ----------------------------------------------
-|Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm] |  
-|Macro | [@compgen/cra](packages/macro-generators/cra) | [![@compgen/cra-full][cra-full-badge]][cra-full-npm] |    
-|Macro | [@compgen/nest](packages/macro-generators/nest) | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |    
-|Macro | [@compgen/next](packages/macro-generators/next) | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |    
+| Type  | Package                                                         | Version                                                     |
+| ----- | --------------------------------------------------------------- | ----------------------------------------------------------- |
+| Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm]                |
+| Macro | [@compgen/cra](packages/macro-generators/cra)                   | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
+| Macro | [@compgen/nest](packages/macro-generators/nest)                 | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
+| Macro | [@compgen/next](packages/macro-generators/next)                 | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
 
 ## Micro Generators
 
 You can easily selectively add code quality tools and other useful libraries to your existing codebase.
 
-|Type          | Package                                         | Version                                       | 
-|------------- | ----------------------------------------------- | ----------------------------------------------
-|Micro | [@compgen/browserlist](packages/micro-generators/browserlist) | [![@compgen/browserlist][bl-badge]][bl-npm] |
-|Micro | [@compgen/cra-min](packages/micro-generators/cra-min) | [![@compgen/cra-min][cra-badge]][cra-npm] |
-|Micro | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm] | 
-|Micro | [@compgen/eslint](packages/micro-generators/eslint) | [![@compgen/eslint][es-badge]][es-npm] |
-|Micro | [@compgen/git-hooks](packages/micro-generators/git-hooks) | [![@compgen/git-hooks][gh-badge]][gh-npm] |
-|Micro | [@compgen/heroku](packages/micro-generators/heroku) | [![@compgen/heroku][he-badge]][he-npm] |
-|Micro | [@compgen/nest-min](packages/micro-generators/nest-min) | [![@compgen/nest-min][nest-badge]][nest-npm] |
-|Micro | [@compgen/next-min](packages/micro-generators/next-min) | [![@compgen/next-min][next-badge]][next-npm] |
-|Micro | [@compgen/prettier](packages/micro-generators/prettier) | [![@compgen/prettier][prettier-badge]][prettier-npm] |
-|Micro | [@compgen/stylelint](packages/micro-generators/stylelint) | [![@compgen/stylelint][stylelint-badge]][stylelint-npm] |
-|Micro | [@compgen/ts-node](packages/micro-generators/ts-node) | [![@compgen/ts-node][tsnode-badge]][tsnode-npm] |
+| Type  | Package                                                           | Version                                                 |
+| ----- | ----------------------------------------------------------------- | ------------------------------------------------------- |
+| Micro | [@compgen/browserlist](packages/micro-generators/browserlist)     | [![@compgen/browserlist][bl-badge]][bl-npm]             |
+| Micro | [@compgen/cra-min](packages/micro-generators/cra-min)             | [![@compgen/cra-min][cra-badge]][cra-npm]               |
+| Micro | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm]           |
+| Micro | [@compgen/eslint](packages/micro-generators/eslint)               | [![@compgen/eslint][es-badge]][es-npm]                  |
+| Micro | [@compgen/git-hooks](packages/micro-generators/git-hooks)         | [![@compgen/git-hooks][gh-badge]][gh-npm]               |
+| Micro | [@compgen/heroku](packages/micro-generators/heroku)               | [![@compgen/heroku][he-badge]][he-npm]                  |
+| Micro | [@compgen/nest-min](packages/micro-generators/nest-min)           | [![@compgen/nest-min][nest-badge]][nest-npm]            |
+| Micro | [@compgen/next-min](packages/micro-generators/next-min)           | [![@compgen/next-min][next-badge]][next-npm]            |
+| Micro | [@compgen/prettier](packages/micro-generators/prettier)           | [![@compgen/prettier][prettier-badge]][prettier-npm]    |
+| Micro | [@compgen/rna-min](packages/micro-generators/rna-min)             | [![@compgen/rna-min][rna-min-badge]][rna-min-npm]       |
+| Micro | [@compgen/stylelint](packages/micro-generators/stylelint)         | [![@compgen/stylelint][stylelint-badge]][stylelint-npm] |
+| Micro | [@compgen/ts-node](packages/micro-generators/ts-node)             | [![@compgen/ts-node][tsnode-badge]][tsnode-npm]         |
 
 ## Examples
 
@@ -119,48 +120,35 @@ execute(createWebCodeQualitySchema(), projectFolder)
 
 [core-badge]: https://badge.fury.io/js/%40compgen%2Fcore.svg
 [core-npm]: https://badge.fury.io/js/%40compgen%2Fcore
-
 [cc-badge]: https://badge.fury.io/js/%40compgen%2Fcode-quality.svg
 [cc-npm]: https://badge.fury.io/js/%40compgen%2Fcode-quality
-
 [bl-badge]: https://badge.fury.io/js/%40compgen%2Fbrowserlist.svg
 [bl-npm]: https://badge.fury.io/js/%40compgen%2Fbrowserlist
-
 [cra-badge]: https://badge.fury.io/js/%40compgen%2Fcra-min.svg
 [cra-npm]: https://badge.fury.io/js/%40compgen%2Fcra-min
-
 [ef-badge]: https://badge.fury.io/js/%40compgen%2Feditor-config.svg
 [ef-npm]: https://badge.fury.io/js/%40compgen%2Feditor-config
-
 [es-badge]: https://badge.fury.io/js/%40compgen%2Feslint.svg
 [es-npm]: https://badge.fury.io/js/%40compgen%2Feslint
-
 [gh-badge]: https://badge.fury.io/js/%40compgen%2Fgit-hooks.svg
 [gh-npm]: https://badge.fury.io/js/%40compgen%2Fgit-hooks
-
 [he-badge]: https://badge.fury.io/js/%40compgen%2Fheroku.svg
 [he-npm]: https://badge.fury.io/js/%40compgen%2Fheroku
-
 [nest-badge]: https://badge.fury.io/js/%40compgen%2Fnest-min.svg
 [nest-npm]: https://badge.fury.io/js/%40compgen%2Fnest-min
-
 [next-badge]: https://badge.fury.io/js/%40compgen%2Fnext-min.svg
 [next-npm]: https://badge.fury.io/js/%40compgen%2Fnext-min
-
 [prettier-badge]: https://badge.fury.io/js/%40compgen%2Fprettier.svg
 [prettier-npm]: https://badge.fury.io/js/%40compgen%2Fprettier
-
+[rna-min-badge]: https://badge.fury.io/js/%40compgen%2Frna-min.svg
+[rna-min-npm]: https://badge.fury.io/js/%40compgen%2Frna-min
 [stylelint-badge]: https://badge.fury.io/js/%40compgen%2Fstylelint.svg
 [stylelint-npm]: https://badge.fury.io/js/%40compgen%2Fstylelint
-
 [tsnode-badge]: https://badge.fury.io/js/%40compgen%2Fts-node.svg
 [tsnode-npm]: https://badge.fury.io/js/%40compgen%2Fts-node
-
 [cra-full-badge]: https://badge.fury.io/js/%40compgen%2Fcra.svg
 [cra-full-npm]: https://badge.fury.io/js/%40compgen%2Fcra
-
 [nest-full-badge]: https://badge.fury.io/js/%40compgen%2Fnest.svg
 [nest-full-npm]: https://badge.fury.io/js/%40compgen%2Fnest
-
 [next-full-badge]: https://badge.fury.io/js/%40compgen%2Fnext.svg
 [next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnext

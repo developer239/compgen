@@ -5,7 +5,11 @@ import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { logger } from '../logger'
-import { addDependencies, moveToDevDependencies } from '../shell/dependencies'
+import {
+  addDependencies,
+  moveToDevDependencies,
+  removeDependencies,
+} from '../shell/dependencies'
 import { execWithSpinner } from '../shell/exec'
 import { execInProjectWithSpinner } from '../shell/execProject'
 import { updateJson } from '../updateJson'
@@ -100,6 +104,15 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
       projectFolder,
       libraries: schema.dependencies.add.dev,
       isDev: true,
+    })
+
+    //
+    // Remove dependencies
+    //
+
+    await removeDependencies({
+      projectFolder,
+      libraries: schema.dependencies.remove,
     })
 
     logger.success('Success')
