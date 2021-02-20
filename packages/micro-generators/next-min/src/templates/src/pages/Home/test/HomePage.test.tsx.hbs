@@ -7,6 +7,7 @@ describe('[pages] Home', () => {
   it('should render correctly', () => {
     const renderer = render(<Home />)
     const renderedElement = renderer.getByTestId(HOME_TEST_ID)
+
     expect(renderedElement).toBeTruthy()
   })
 })

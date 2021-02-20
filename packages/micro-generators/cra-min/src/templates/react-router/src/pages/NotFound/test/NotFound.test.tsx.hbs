@@ -8,6 +8,7 @@ describe('[pages] NotFoundPage', () => {
   it('should render correctly', () => {
     const renderer = renderPage(<App />, NOT_FOUND_ROUTE)
     const renderedElement = renderer.getByTestId(NOT_FOUND_TEST_ID)
+
     expect(renderedElement).toBeTruthy()
   })
 })
