@@ -56,8 +56,14 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
         (content) => {
           let updatedContent = { ...content }
 
-          const propertiesToAdd = schema.jsonFiles[file]?.add
           const propertiesToRemove = schema.jsonFiles[file]?.remove
+          const propertiesToAdd = schema.jsonFiles[file]?.add
+
+          if (propertiesToRemove) {
+            for (const propertyPath of propertiesToRemove) {
+              updatedContent = deleteProperty(updatedContent, propertyPath)
+            }
+          }
 
           if (propertiesToAdd) {
             for (const property of propertiesToAdd) {
@@ -65,12 +71,6 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
                 property.path,
                 property.value
               )(updatedContent)
-            }
-          }
-
-          if (propertiesToRemove) {
-            for (const propertyPath of propertiesToRemove) {
-              updatedContent = deleteProperty(updatedContent, propertyPath)
             }
           }
 
