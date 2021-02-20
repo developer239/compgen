@@ -20,12 +20,13 @@ Use these to build your own generators.
 
 These will create whole application setup.
 
-| Type             | Package                                         | Version                                                     |
-| ---------------- | ----------------------------------------------- | ----------------------------------------------------------- |
-| Create React App | [@compgen/cra](packages/macro-generators/cra)   | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
-| Nest.js          | [@compgen/nest](packages/macro-generators/nest) | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
-| Next.js          | [@compgen/next](packages/macro-generators/next) | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
-| React Native     | [@compgen/rna](packages/macro-generators/rna)   | [![@compgen/rna][rna-badge]][rna-npm]                       |
+| Type             | Package                                               | Version                                                     |
+| ---------------- | ----------------------------------------------------- | ----------------------------------------------------------- |
+| Angular          | [@compgen/angular](packages/macro-generators/angular) | [![@compgen/angular][angular-badge]][angular-npm]           |
+| Nest.js          | [@compgen/nest](packages/macro-generators/nest)       | [![@compgen/nest-min-full][nest-full-badge]][nest-full-npm] |
+| Create React App | [@compgen/cra](packages/macro-generators/cra)         | [![@compgen/cra-full][cra-full-badge]][cra-full-npm]        |
+| Next.js          | [@compgen/next](packages/macro-generators/next)       | [![@compgen/next-min-full][next-full-badge]][next-full-npm] |
+| React Native     | [@compgen/rna](packages/macro-generators/rna)         | [![@compgen/rna][rna-badge]][rna-npm]                       |
 
 ## Macro Generators
 
@@ -127,6 +128,8 @@ const projectFolder = '.'
 execute(createWebCodeQualitySchema(), projectFolder)
 ```
 
+[angular-badge]: https://badge.fury.io/js/%40compgen%2Fangular.svg
+[angularn-npm]: https://badge.fury.io/js/%40compgen%2Fangular
 [angular-min-badge]: https://badge.fury.io/js/%40compgen%2Fangular-min.svg
 [angular-min-npm]: https://badge.fury.io/js/%40compgen%2Fangular-min
 [core-badge]: https://badge.fury.io/js/%40compgen%2Fcore.svg
