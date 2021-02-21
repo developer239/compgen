@@ -49,3 +49,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          ROLLBAR_TOKEN: ${{ secrets.ROLLBAR_TOKEN }}
