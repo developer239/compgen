@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/developer239/compgen/compare/@compgen/ts-node@0.1.9...@compgen/ts-node@0.1.10) (2021-02-21)
+
+**Note:** Version bump only for package @compgen/ts-node
+
+
+
+
+
 ## [0.1.9](https://github.com/developer239/compgen/compare/@compgen/ts-node@0.1.8...@compgen/ts-node@0.1.9) (2021-02-21)
 
 **Note:** Version bump only for package @compgen/ts-node

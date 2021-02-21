@@ -1,6 +1,6 @@
 {
   "name": "@compgen/git-hooks",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,7 +16,7 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.7.0"
+    "@compgen/core": "^0.7.1"
   },
   "publishConfig": {
     "access": "public"

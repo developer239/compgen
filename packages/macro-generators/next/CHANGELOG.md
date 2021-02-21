@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/developer239/compgen/compare/@compgen/next@0.4.2...@compgen/next@0.4.3) (2021-02-21)
+
+**Note:** Version bump only for package @compgen/next
+
+
+
+
+
 ## [0.4.2](https://github.com/developer239/compgen/compare/@compgen/next@0.4.1...@compgen/next@0.4.2) (2021-02-21)
 
 **Note:** Version bump only for package @compgen/next
