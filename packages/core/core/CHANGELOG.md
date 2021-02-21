@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/developer239/compgen/compare/@compgen/core@0.6.0...@compgen/core@0.7.0) (2021-02-21)
+
+
+### Bug Fixes
+
+* don't override schema name ([a453b05](https://github.com/developer239/compgen/commit/a453b05fb30cbf3a17820fd4c7195d4d7908721d))
+* project name validation ([5042a16](https://github.com/developer239/compgen/commit/5042a16aca6f8256be2fdc72ea8488a8a6f109f5))
+* typo 👀 ([ae3416f](https://github.com/developer239/compgen/commit/ae3416f9f331888a464853f5d4e7638f87bda6a5))
+
+
+### Features
+
+* make error reporting optional ([df49af9](https://github.com/developer239/compgen/commit/df49af96ab91ffca469c13ca440ec9e3f640ff76))
+
+
+
+
+
 # [0.6.0](https://github.com/developer239/compgen/compare/@compgen/core@0.5.0...@compgen/core@0.6.0) (2021-02-21)
 
 
