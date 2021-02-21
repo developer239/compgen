@@ -1,13 +1,20 @@
+/* eslint-disable @typescript-eslint/prefer-regexp-exec */
 import fs from 'fs'
 import path from 'path'
 
-export const validateProjectFolder = (value: string) => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const validateName = require('validate-npm-package-name')
+export const isValidAppName = (name: string) =>
+  Boolean(name.match('[^0-9a-z\\-]'))
 
-  const { errors } = validateName(value)
+export const isValidAngularAppName = (name: string) =>
+  Boolean(name.match('[^a-z\\-]'))
 
-  if (errors) {
+export const isValidReactNativeAppName = (name: string) =>
+  Boolean(name.match('[^a-z]'))
+
+export const validateProjectFolder = (validator: (name: string) => boolean) => (
+  value: string
+) => {
+  if (validator(value)) {
     return 'Invalid name.'
   }
 

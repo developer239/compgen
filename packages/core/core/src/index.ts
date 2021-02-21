@@ -30,7 +30,7 @@ export {
   execInProjectWithSpinner,
 } from './services/shell/execProject'
 export { removeProjectFiles } from './services/shell/files'
-export { validateProjectFolder } from './services/validator/validateProjectFolder'
+export * from './services/validator/validateProjectFolder'
 export {
   AppType,
   ISchemaCommand,
@@ -41,4 +41,3 @@ export {
   CIType,
   DatabaseType,
 } from './types'
-export { toAlphanumeric } from './helpers/text'

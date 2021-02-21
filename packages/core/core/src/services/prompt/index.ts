@@ -1,7 +1,10 @@
 import inquirer from 'inquirer'
 import { capitalizeAll } from '../../helpers/text'
 import { AppType, CDType, CIType, DatabaseType } from '../../types'
-import { validateProjectFolder } from '../validator/validateProjectFolder'
+import {
+  isValidAppName,
+  validateProjectFolder,
+} from '../validator/validateProjectFolder'
 
 export const askQuestion = async (
   question: string,
@@ -17,9 +20,10 @@ export const askQuestion = async (
 }
 
 export const askProjectName = async (
-  question = 'How do you want to call your project?'
+  question = 'How do you want to call your project?',
+  validator = isValidAppName
 ): Promise<{ projectFolder: string; projectName: string }> => {
-  const answer = await askQuestion(question, validateProjectFolder)
+  const answer = await askQuestion(question, validateProjectFolder(validator))
 
   return {
     projectFolder: answer,

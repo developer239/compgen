@@ -6,6 +6,3 @@ export const capitalizeAll = (name: string) => {
 
   return words.map(capitalize).join(' ')
 }
-
-export const toAlphanumeric = (string: string) =>
-  string.replace(/[^0-9a-z]/giu, '')

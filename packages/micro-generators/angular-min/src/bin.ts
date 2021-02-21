@@ -1,8 +1,16 @@
-import { askProjectName, execute, logger } from '@compgen/core'
+import {
+  askProjectName,
+  execute,
+  isValidAngularAppName,
+  logger,
+} from '@compgen/core'
 import { createSchema } from './index'
 
 const run = async () => {
-  const { projectFolder } = await askProjectName()
+  const { projectFolder } = await askProjectName(
+    'How do you want to call your project?',
+    isValidAngularAppName
+  )
 
   const schema = createSchema({ projectFolder })
 

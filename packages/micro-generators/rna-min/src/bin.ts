@@ -1,18 +1,26 @@
-import { askProjectName, execute, logger, toAlphanumeric } from '@compgen/core'
+import {
+  askProjectName,
+  execute,
+  logger,
+  isValidReactNativeAppName,
+} from '@compgen/core'
 import { askNavigationType } from './prompt'
 import { createSchema } from './index'
 
 const run = async () => {
-  const projectInfo = await askProjectName()
+  const projectInfo = await askProjectName(
+    'How do you want to call your project?',
+    isValidReactNativeAppName
+  )
   const navigationType = await askNavigationType()
   const { projectFolder } = projectInfo
 
   const schema = createSchema({
-    projectFolder: toAlphanumeric(projectFolder),
+    projectFolder,
     navigationType,
   })
 
-  await execute(schema, toAlphanumeric(projectFolder))
+  await execute(schema, projectFolder)
 }
 
 run().catch(logger.error)
