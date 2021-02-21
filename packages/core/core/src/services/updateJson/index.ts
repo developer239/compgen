@@ -1,4 +1,5 @@
-import fs from 'fs'
+/* eslint-disable security/detect-non-literal-fs-filename */
+import fs from 'fs/promises'
 import path from 'path'
 import ora from 'ora'
 
@@ -12,18 +13,20 @@ interface IOptions {
 type jsonFileType = any
 
 export const updateJson = async (
-  {
-    fileName,
-    projectFolder,
-    message,
-    messageSuccess,
-  }: IOptions,
+  { fileName, projectFolder, message, messageSuccess }: IOptions,
   updateFile: (packageJson: jsonFileType) => Promise<jsonFileType>
 ) => {
   const spinner = ora()
   spinner.start(message)
 
   const jsonFilePath = path.join(process.cwd(), projectFolder, fileName)
+
+  try {
+    await fs.readFile(jsonFilePath)
+  } catch (error) {
+    spinner.warn(`${messageSuccess} -- FAILED ${error.message}`)
+    throw error
+  }
 
   if (require?.cache[jsonFilePath]) {
     delete require.cache[jsonFilePath]
@@ -34,6 +37,6 @@ export const updateJson = async (
 
   const updatedJsonFile = await updateFile(jsonFile)
 
-  fs.writeFileSync(jsonFilePath, JSON.stringify(updatedJsonFile, null, 2))
+  await fs.writeFile(jsonFilePath, JSON.stringify(updatedJsonFile, null, 2))
   spinner.succeed(messageSuccess)
 }

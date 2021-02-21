@@ -24,5 +24,6 @@ export const createFilesFromFolder = async ({
     spinner.succeed(`[generator] create ${name}`)
   } catch (error) {
     spinner.warn(`[generator] ${name} error: ${error}`)
+    throw error
   }
 }

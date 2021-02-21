@@ -5,6 +5,7 @@ import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { logger } from '../logger'
+import { reporter } from '../reporter'
 import {
   addDependencies,
   moveToDevDependencies,
@@ -15,6 +16,8 @@ import { execInProjectWithSpinner } from '../shell/execProject'
 import { updateJson } from '../updateJson'
 
 export const execute = async (schema: ISchema, projectFolder: string) => {
+  reporter.info(`Running ${schema.name}`)
+
   try {
     //
     // Execute commands
@@ -116,8 +119,29 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
     })
 
     logger.success('Success')
+    reporter.info(`Finished ${schema.name}`)
   } catch (error) {
-    logger.error('Something went wrong.')
-    logger.error(error)
+    const message = `
+
+      Error! Thank you for wasting your time on @compgen. 👀 I just sent a notification
+      to developer239 with debug information.
+
+      In the meantime, try running the generator with different parameters. In some cases 3rd party CLI tools can
+      produce different output than what @compgen expects.
+    `
+
+    logger.error(message)
+    reporter.error(`Failed ${schema.name}
+
+${JSON.stringify(
+  {
+    message,
+    error,
+    schema,
+  },
+  null,
+  2
+)}
+    `)
   }
 }

@@ -18,6 +18,7 @@
     "@linters/eslint-config-typescript": "1.9.0",
     "@linters/prettier-config": "1.2.0",
     "@linters/semantic-release": "1.6.0",
+    "@rollup/plugin-replace": "^2.3.4",
     "@types/jest": "26.0.15",
     "eslint": "7.13.0",
     "eslint-config-prettier": "6.15.0",

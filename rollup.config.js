@@ -1,3 +1,4 @@
+import replace from '@rollup/plugin-replace'
 import commonjs from 'rollup-plugin-commonjs'
 import copy from 'rollup-plugin-copy'
 import { preserveShebangs } from 'rollup-plugin-preserve-shebangs'
@@ -13,6 +14,9 @@ export default ['bin', 'index'].map((name) => ({
   },
   plugins: [
     preserveShebangs(),
+    replace({
+      'ROLLUP_PUBLIC_TOKEN': process.env.ROLLBAR_TOKEN,
+    }),
     progress(),
     typescript({
       clean: true,
