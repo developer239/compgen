@@ -98,7 +98,9 @@ export const builder = (name: string) => {
   const addFolder = (file: ISchemaAddFile) => schema.files.add.push(file)
 
   const combineSchema = (newSchema: ISchema) => {
+    const oldSchemaName = schema.name
     schema = deepMerge(schema, newSchema)
+    schema.name = oldSchemaName
   }
 
   const toJson = (): ISchema => schema
