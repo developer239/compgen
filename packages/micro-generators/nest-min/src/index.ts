@@ -7,7 +7,7 @@ interface IOptions {
 }
 
 export const createSchema = ({ projectFolder, isDatabase }: IOptions) => {
-  const schema = builder('nestjs')
+  const schema = builder('nestjs-min')
 
   schema.addCommand({
     command: `npx @nestjs/cli new ${projectFolder} --package-manager yarn`,

@@ -6,7 +6,7 @@ interface IOptions {
 }
 
 export const createSchema = ({ projectFolder }: IOptions) => {
-  const schema = builder('prettier')
+  const schema = builder('angular-min')
 
   schema.addFolder({
     label: 'base codebase',

@@ -7,7 +7,7 @@ interface IOptions {
 }
 
 export const createSchema = ({ projectFolder, isRouter }: IOptions) => {
-  const schema = builder('create-react-app')
+  const schema = builder('cra-min')
   schema.addCommand({
     command: `npx create-react-app ${projectFolder} --template typescript`,
     successMessage: '[create react app] initialize',

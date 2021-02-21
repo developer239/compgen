@@ -6,7 +6,7 @@ interface IOptions {
 }
 
 export const createSchema = ({ projectFolder }: IOptions) => {
-  const schema = builder('nextjs')
+  const schema = builder('nextjs-min')
 
   schema.addCommand({
     command: '[fs][make dir] create project directory',
