@@ -23,8 +23,8 @@ export const execWithSpinner = async (
 ) => {
   const spinner = ora()
   spinner.start(
-    `Runnnning: ${chalk.yellow(
-      options?.trim ? command.replace(options.trim, 'blah') : command
+    `Running: ${chalk.yellow(
+      options?.trim ? command.replace(options.trim, '') : command
     )}`
   )
 
