@@ -1,10 +1,11 @@
-/* eslint-disable max-lines-per-function,no-await-in-loop */
+/* eslint-disable max-lines-per-function,no-await-in-loop,complexity */
 import { orderBy } from '../../helpers/array/orderBy'
 import { addProperty } from '../../helpers/object/addProperty'
 import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { logger } from '../logger'
+import { askYesNo } from '../prompt'
 import { reporter } from '../reporter'
 import {
   addDependencies,
@@ -16,8 +17,6 @@ import { execInProjectWithSpinner } from '../shell/execProject'
 import { updateJson } from '../updateJson'
 
 export const execute = async (schema: ISchema, projectFolder: string) => {
-  reporter.info(`Running ${schema.name}`)
-
   try {
     //
     // Execute commands
@@ -119,29 +118,42 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
     })
 
     logger.success('Success')
-    reporter.info(`Finished ${schema.name}`)
   } catch (error) {
-    const message = `
+    const isReporting = await askYesNo(
+      'Do you want to send debug information to core developer github.com/developer239?'
+    )
 
-      Error! Thank you for wasting your time on @compgen. 👀 I just sent a notification
-      to developer239 with debug information.
+    if (isReporting) {
+      reporter.error(`Failed ${schema.name}
 
-      In the meantime, try running the generator with different parameters. In some cases 3rd party CLI tools can
-      produce different output than what @compgen expects.
-    `
-
-    logger.error(message)
-    reporter.error(`Failed ${schema.name}
-
-${JSON.stringify(
-  {
-    message,
-    error,
-    schema,
-  },
-  null,
-  2
-)}
+      ${JSON.stringify(
+        {
+          error,
+          schema,
+        },
+        null,
+        2
+      )}
     `)
+
+      const message = `
+  Thank you for wasting your time on @compgen. Unfortunately something went wrong. 👀 I just sent a notification
+  to developer239 with debug information.
+
+  In the meantime, try running the generator with different parameters. In some cases 3rd party CLI tools can
+  produce different output than what @compgen expects.
+      `
+
+      logger.error(message)
+    } else {
+      const message = `
+  Thank you for wasting your time on @compgen. Unfortunately something went wrong. 👀
+
+  Try running the generator with different parameters. In some cases 3rd party CLI tools can
+  produce different output than what @compgen expects.
+      `
+
+      logger.error(message)
+    }
   }
 }
