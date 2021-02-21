@@ -1,6 +1,6 @@
 {
   "name": "@compgen/cra",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,12 +16,12 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/browserlist": "^0.1.11",
-    "@compgen/code-quality": "^0.3.3",
-    "@compgen/core": "^0.7.1",
-    "@compgen/cra-min": "^0.1.10",
-    "@compgen/git-hooks": "^0.4.3",
-    "@compgen/heroku": "^0.3.6"
+    "@compgen/browserlist": "^0.1.12",
+    "@compgen/code-quality": "^0.3.4",
+    "@compgen/core": "^0.7.2",
+    "@compgen/cra-min": "^0.1.11",
+    "@compgen/git-hooks": "^0.4.4",
+    "@compgen/heroku": "^0.3.7"
   },
   "publishConfig": {
     "access": "public"

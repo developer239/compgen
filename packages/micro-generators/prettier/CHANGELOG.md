@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.4](https://github.com/developer239/compgen/compare/@compgen/prettier@0.3.3...@compgen/prettier@0.3.4) (2021-02-21)
+
+
+### Bug Fixes
+
+* engines requirements ([041f58c](https://github.com/developer239/compgen/commit/041f58cffca7b9db89515ed7e2d77535750cedd6))
+
+
+
+
+
 ## [0.3.3](https://github.com/developer239/compgen/compare/@compgen/prettier@0.3.2...@compgen/prettier@0.3.3) (2021-02-21)
 
 **Note:** Version bump only for package @compgen/prettier

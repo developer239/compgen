@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.11](https://github.com/developer239/compgen/compare/@compgen/next-min@0.1.10...@compgen/next-min@0.1.11) (2021-02-21)
+
+
+### Bug Fixes
+
+* engines requirements ([041f58c](https://github.com/developer239/compgen/commit/041f58cffca7b9db89515ed7e2d77535750cedd6))
+
+
+
+
+
 ## [0.1.10](https://github.com/developer239/compgen/compare/@compgen/next-min@0.1.9...@compgen/next-min@0.1.10) (2021-02-21)
 
 **Note:** Version bump only for package @compgen/next-min

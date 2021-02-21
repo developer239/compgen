@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.2](https://github.com/developer239/compgen/compare/@compgen/core@0.7.1...@compgen/core@0.7.2) (2021-02-21)
+
+
+### Bug Fixes
+
+* engines requirements ([041f58c](https://github.com/developer239/compgen/commit/041f58cffca7b9db89515ed7e2d77535750cedd6))
+
+
+
+
+
 ## [0.7.1](https://github.com/developer239/compgen/compare/@compgen/core@0.7.0...@compgen/core@0.7.1) (2021-02-21)
 
 **Note:** Version bump only for package @compgen/core

@@ -1,6 +1,6 @@
 {
   "name": "@compgen/editor-config",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,7 +16,7 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.7.1"
+    "@compgen/core": "^0.7.2"
   },
   "publishConfig": {
     "access": "public"
