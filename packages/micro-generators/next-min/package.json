@@ -3,6 +3,10 @@
   "version": "0.1.9",
   "license": "MIT",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
   "directories": {
     "lib": "lib"
   },

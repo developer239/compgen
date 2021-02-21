@@ -9,6 +9,10 @@
   "files": [
     "lib"
   ],
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
   "types": "lib/index",
   "bin": "lib/bin.js",
   "publishConfig": {
