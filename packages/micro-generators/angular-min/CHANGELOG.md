@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/developer239/compgen/compare/@compgen/angular-min@0.3.0...@compgen/angular-min@0.3.1) (2021-02-21)
+
+
+### Bug Fixes
+
+* micro generator names ([ad10b10](https://github.com/developer239/compgen/commit/ad10b10f7211b5b791b1c43d5da5e59e4dd6195d))
+
+
+
+
+
 # [0.3.0](https://github.com/developer239/compgen/compare/@compgen/angular-min@0.2.0...@compgen/angular-min@0.3.0) (2021-02-20)
 
 

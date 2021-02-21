@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.2.0...@compgen/nest-min@0.2.1) (2021-02-21)
+
+
+### Bug Fixes
+
+* micro generator names ([ad10b10](https://github.com/developer239/compgen/commit/ad10b10f7211b5b791b1c43d5da5e59e4dd6195d))
+
+
+
+
+
 # [0.2.0](https://github.com/developer239/compgen/compare/@compgen/nest-min@0.1.6...@compgen/nest-min@0.2.0) (2021-02-20)
 
 

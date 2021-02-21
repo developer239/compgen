@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.8](https://github.com/developer239/compgen/compare/@compgen/cra-min@0.1.7...@compgen/cra-min@0.1.8) (2021-02-21)
+
+
+### Bug Fixes
+
+* micro generator names ([ad10b10](https://github.com/developer239/compgen/commit/ad10b10f7211b5b791b1c43d5da5e59e4dd6195d))
+
+
+
+
+
 ## [0.1.7](https://github.com/developer239/compgen/compare/@compgen/cra-min@0.1.6...@compgen/cra-min@0.1.7) (2021-02-20)
 
 **Note:** Version bump only for package @compgen/cra-min

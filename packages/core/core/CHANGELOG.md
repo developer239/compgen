@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/developer239/compgen/compare/@compgen/core@0.5.0...@compgen/core@0.6.0) (2021-02-21)
+
+
+### Features
+
+* improve error handling ([c0be5af](https://github.com/developer239/compgen/commit/c0be5afcf4e98d9156780c90af672ab6c1698766))
+
+
+
+
+
 # [0.5.0](https://github.com/developer239/compgen/compare/@compgen/core@0.4.0...@compgen/core@0.5.0) (2021-02-20)
 
 
