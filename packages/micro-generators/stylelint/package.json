@@ -1,6 +1,6 @@
 {
   "name": "@compgen/stylelint",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,7 +16,7 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.7.2"
+    "@compgen/core": "^0.7.3"
   },
   "publishConfig": {
     "access": "public"

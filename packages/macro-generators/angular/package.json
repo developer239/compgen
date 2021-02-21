@@ -1,6 +1,6 @@
 {
   "name": "@compgen/angular",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,11 +16,11 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/angular-min": "^0.3.4",
-    "@compgen/browserlist": "^0.1.12",
-    "@compgen/code-quality": "^0.3.4",
-    "@compgen/core": "^0.7.2",
-    "@compgen/git-hooks": "^0.4.4"
+    "@compgen/angular-min": "^0.3.5",
+    "@compgen/browserlist": "^0.1.13",
+    "@compgen/code-quality": "^0.3.5",
+    "@compgen/core": "^0.7.3",
+    "@compgen/git-hooks": "^0.4.5"
   },
   "publishConfig": {
     "access": "public"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/developer239/compgen/compare/@compgen/core@0.7.2...@compgen/core@0.7.3) (2021-02-21)
+
+
+### Bug Fixes
+
+* enforce node version everywhere ([bf8bdf9](https://github.com/developer239/compgen/commit/bf8bdf96e5dfe29e61fdd3359ae3b34c82fae524))
+
+
+
+
+
 ## [0.7.2](https://github.com/developer239/compgen/compare/@compgen/core@0.7.1...@compgen/core@0.7.2) (2021-02-21)
 
 
