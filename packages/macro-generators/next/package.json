@@ -1,6 +1,6 @@
 {
   "name": "@compgen/next",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -17,7 +17,7 @@
   "bin": "lib/bin.js",
   "dependencies": {
     "@compgen/browserlist": "^0.1.14",
-    "@compgen/code-quality": "^0.3.6",
+    "@compgen/code-quality": "^0.3.7",
     "@compgen/core": "^0.8.0",
     "@compgen/git-hooks": "^0.4.6",
     "@compgen/heroku": "^0.3.9",

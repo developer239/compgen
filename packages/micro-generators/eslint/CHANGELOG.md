@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.7](https://github.com/developer239/compgen/compare/@compgen/eslint@0.3.6...@compgen/eslint@0.3.7) (2021-03-27)
+
+
+### Bug Fixes
+
+* make eslint work without prettier ([af372eb](https://github.com/developer239/compgen/commit/af372ebcf3f48d628439282b033aa3bac14b7c56))
+
+
+
+
+
 ## [0.3.6](https://github.com/developer239/compgen/compare/@compgen/eslint@0.3.5...@compgen/eslint@0.3.6) (2021-03-27)
 
 **Note:** Version bump only for package @compgen/eslint
