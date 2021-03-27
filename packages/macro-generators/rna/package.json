@@ -1,6 +1,6 @@
 {
   "name": "@compgen/rna",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,10 +16,10 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/code-quality": "^0.3.5",
-    "@compgen/core": "^0.7.3",
-    "@compgen/git-hooks": "^0.4.5",
-    "@compgen/rna-min": "^0.3.5"
+    "@compgen/code-quality": "^0.3.6",
+    "@compgen/core": "^0.8.0",
+    "@compgen/git-hooks": "^0.4.6",
+    "@compgen/rna-min": "^0.3.6"
   },
   "publishConfig": {
     "access": "public"
