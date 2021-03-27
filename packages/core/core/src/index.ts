@@ -41,3 +41,5 @@ export {
   CIType,
   DatabaseType,
 } from './types'
+export { detectAppType } from './services/auto/detectAppType'
+export { hasDependency } from './services/auto/hasDependency'

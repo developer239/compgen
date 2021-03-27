@@ -32,9 +32,10 @@ These will create whole application setup.
 
 Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup.
 
-| Type  | Package                                                         | Version                                      |
-| ----- | --------------------------------------------------------------- | -------------------------------------------- |
-| Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm] |
+| Type  | Package                                                         | Version                                                       |
+| ----- | --------------------------------------------------------------- | ------------------------------------------------------------- |
+| Macro | [@compgen/code-quality](packages/macro-generators/code-quality) | [![@compgen/code-quality][cc-badge]][cc-npm]                  |
+| Macro | [@compgen/eslint-auto](packages/macro-generators/eslint-auto)   | [![@compgen/eslint-auto][eslint-auto-badge]][eslint-auto-npm] |
 
 ## Micro Generators
 
@@ -134,6 +135,8 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [core-npm]: https://badge.fury.io/js/%40compgen%2Fcore
 [cc-badge]: https://badge.fury.io/js/%40compgen%2Fcode-quality.svg
 [cc-npm]: https://badge.fury.io/js/%40compgen%2Fcode-quality
+[eslint-auto-badge]: https://badge.fury.io/js/%40compgen%2Feslint-auto.svg
+[eslint-auto-npm]: https://badge.fury.io/js/%40compgen%2Feslint-auto
 [bl-badge]: https://badge.fury.io/js/%40compgen%2Fbrowserlist.svg
 [bl-npm]: https://badge.fury.io/js/%40compgen%2Fbrowserlist
 [cra-badge]: https://badge.fury.io/js/%40compgen%2Fcra-min.svg
