@@ -19,7 +19,9 @@ export const createSchema = ({ appType, projectFolder }: IOptions) => {
 
   schema.combineSchema(createEditorConfigSchema())
   schema.combineSchema(createPrettierSchema({ appType }))
-  schema.combineSchema(createEslintSchema({ appType, projectFolder }))
+  schema.combineSchema(
+    createEslintSchema({ appType, projectFolder, hasPrettier })
+  )
 
   switch (appType) {
     case AppType.REACT_NATIVE:

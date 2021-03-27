@@ -4,9 +4,14 @@ import { AppType, builder } from '@compgen/core'
 interface IOptions {
   appType: AppType
   projectFolder: string
+  hasPrettier: boolean
 }
 
-export const createSchema = ({ appType, projectFolder }: IOptions) => {
+export const createSchema = ({
+  appType,
+  projectFolder,
+  hasPrettier,
+}: IOptions) => {
   const schema = builder('eslint')
 
   const dependenciesShared = [
@@ -14,8 +19,11 @@ export const createSchema = ({ appType, projectFolder }: IOptions) => {
     'eslint-plugin-import',
     '@linters/eslint-config-typescript',
     '@linters/eslint-config-jest',
-    'eslint-config-prettier',
   ]
+
+  if (hasPrettier) {
+    dependenciesShared.push('eslint-config-prettier')
+  }
 
   switch (appType) {
     case AppType.REACT_NATIVE: {
@@ -56,8 +64,11 @@ export const createSchema = ({ appType, projectFolder }: IOptions) => {
       schema.addDevDependencies(dependenciesAngular)
       schema.addScript('lint:ts', 'ng lint')
 
+      const projectKey =
+        projectFolder === '.' ? process.cwd().split('/').pop()! : projectFolder
+
       schema.addJsonFileProperty('angular.json', {
-        path: ['projects', projectFolder, 'architect', 'lint'],
+        path: ['projects', projectKey, 'architect', 'lint'],
         value: {
           builder: '@angular-eslint/builder:lint',
           options: {
@@ -73,6 +84,7 @@ export const createSchema = ({ appType, projectFolder }: IOptions) => {
   schema.addFolder({
     label: 'eslint',
     source: path.join(__dirname, 'templates', appType),
+    context: { hasPrettier },
   })
 
   return schema.toJson()
