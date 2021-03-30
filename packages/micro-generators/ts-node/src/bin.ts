@@ -4,9 +4,9 @@ import { createSchema } from './index'
 const run = async () => {
   const projectFolder = getProjectFolder() ?? '.'
 
-  const tsNodeSchema = createSchema()
+  const schema = createSchema()
 
-  await execute(tsNodeSchema, projectFolder)
+  await execute(schema, projectFolder)
 }
 
 run().catch(logger.error)

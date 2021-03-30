@@ -20,7 +20,7 @@ export const createSchema = ({ hasReadme, componentName }: IOptions) => {
   if (hasReadme) {
     schema.addFolder({
       label: 'react-component-readme',
-      source: path.join(__dirname, 'templates', 'base'),
+      source: path.join(__dirname, 'templates', 'documentation'),
       context: {
         componentName,
       },
