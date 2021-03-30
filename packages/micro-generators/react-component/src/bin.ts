@@ -13,12 +13,12 @@ const run = async () => {
   const projectFolder = getProjectFolder() ?? componentName
   const hasReadme = await askYesNo('Do you want to generate Readme.md?')
 
-  const tsNodeSchema = createSchema({
+  const schema = createSchema({
     hasReadme,
     componentName: capitalize(componentName),
   })
 
-  await execute(tsNodeSchema, projectFolder)
+  await execute(schema, projectFolder)
 }
 
 run().catch(logger.error)
