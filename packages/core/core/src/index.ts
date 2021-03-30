@@ -43,3 +43,4 @@ export {
 } from './types'
 export { detectAppType } from './services/auto/detectAppType'
 export { hasDependency } from './services/auto/hasDependency'
+export { capitalize, capitalizeAll } from './helpers/text'

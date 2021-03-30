@@ -41,21 +41,22 @@ Multiple micro generators composed into robust generators. These generators are 
 
 You can easily selectively add code quality tools and other useful libraries to your existing codebase.
 
-| Type         | Package                                                           | Version                                                   |
-| ------------ | ----------------------------------------------------------------- | --------------------------------------------------------- |
-| Application  | [@compgen/angular-min](packages/micro-generators/angular-min)     | [![@compgen/cra-min][angular-min-badge]][angular-min-npm] |
-| Application  | [@compgen/cra-min](packages/micro-generators/cra-min)             | [![@compgen/cra-min][cra-badge]][cra-npm]                 |
-| Application  | [@compgen/nest-min](packages/micro-generators/nest-min)           | [![@compgen/nest-min][nest-badge]][nest-npm]              |
-| Application  | [@compgen/next-min](packages/micro-generators/next-min)           | [![@compgen/next-min][next-badge]][next-npm]              |
-| Application  | [@compgen/rna-min](packages/micro-generators/rna-min)             | [![@compgen/rna-min][rna-min-badge]][rna-min-npm]         |
-| Application  | [@compgen/ts-node](packages/micro-generators/ts-node)             | [![@compgen/ts-node][tsnode-badge]][tsnode-npm]           |
-| Deployment   | [@compgen/heroku](packages/micro-generators/heroku)               | [![@compgen/heroku][he-badge]][he-npm]                    |
-| Code Quality | [@compgen/editor-config](packages/micro-generators/editor-config) | [![@compgen/editor-config][ef-badge]][ef-npm]             |
-| Code Quality | [@compgen/browserlist](packages/micro-generators/browserlist)     | [![@compgen/browserlist][bl-badge]][bl-npm]               |
-| Code Quality | [@compgen/eslint](packages/micro-generators/eslint)               | [![@compgen/eslint][es-badge]][es-npm]                    |
-| Code Quality | [@compgen/stylelint](packages/micro-generators/stylelint)         | [![@compgen/stylelint][stylelint-badge]][stylelint-npm]   |
-| Code Quality | [@compgen/prettier](packages/micro-generators/prettier)           | [![@compgen/prettier][prettier-badge]][prettier-npm]      |
-| Code Quality | [@compgen/git-hooks](packages/micro-generators/git-hooks)         | [![@compgen/git-hooks][gh-badge]][gh-npm]                 |
+| Type         | Package                                                               | Version                                                                   |
+| ------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Application  | [@compgen/angular-min](packages/micro-generators/angular-min)         | [![@compgen/cra-min][angular-min-badge]][angular-min-npm]                 |
+| Application  | [@compgen/cra-min](packages/micro-generators/cra-min)                 | [![@compgen/cra-min][cra-badge]][cra-npm]                                 |
+| Application  | [@compgen/nest-min](packages/micro-generators/nest-min)               | [![@compgen/nest-min][nest-badge]][nest-npm]                              |
+| Application  | [@compgen/next-min](packages/micro-generators/next-min)               | [![@compgen/next-min][next-badge]][next-npm]                              |
+| Application  | [@compgen/rna-min](packages/micro-generators/rna-min)                 | [![@compgen/rna-min][rna-min-badge]][rna-min-npm]                         |
+| Application  | [@compgen/ts-node](packages/micro-generators/ts-node)                 | [![@compgen/ts-node][tsnode-badge]][tsnode-npm]                           |
+| Deployment   | [@compgen/heroku](packages/micro-generators/heroku)                   | [![@compgen/heroku][he-badge]][he-npm]                                    |
+| Code Quality | [@compgen/editor-config](packages/micro-generators/editor-config)     | [![@compgen/editor-config][ef-badge]][ef-npm]                             |
+| Code Quality | [@compgen/browserlist](packages/micro-generators/browserlist)         | [![@compgen/browserlist][bl-badge]][bl-npm]                               |
+| Code Quality | [@compgen/eslint](packages/micro-generators/eslint)                   | [![@compgen/eslint][es-badge]][es-npm]                                    |
+| Code Quality | [@compgen/stylelint](packages/micro-generators/stylelint)             | [![@compgen/stylelint][stylelint-badge]][stylelint-npm]                   |
+| Code Quality | [@compgen/prettier](packages/micro-generators/prettier)               | [![@compgen/prettier][prettier-badge]][prettier-npm]                      |
+| Code Quality | [@compgen/git-hooks](packages/micro-generators/git-hooks)             | [![@compgen/git-hooks][gh-badge]][gh-npm]                                 |
+| Component    | [@compgen/react-component](packages/micro-generators/react-component) | [![@compgen/react-component][react-component-badge]][react-component-npm] |
 
 ## Programmable Examples
 
@@ -171,3 +172,5 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [next-full-npm]: https://badge.fury.io/js/%40compgen%2Fnext
 [angular-badge]: https://badge.fury.io/js/%40compgen%2Fangular.svg
 [angular-npm]: https://badge.fury.io/js/%40compgen%2Fangular
+[react-component-badge]: https://badge.fury.io/js/%40compgen%2Freact-component.svg
+[react-component-npm]: https://badge.fury.io/js/%40compgen%2Freact-component

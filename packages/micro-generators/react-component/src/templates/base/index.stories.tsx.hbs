@@ -1,0 +1,13 @@
+import { Story, Meta } from '@storybook/react'
+import React from 'react'
+import { {{ componentName }}, IProps } from './index'
+
+export default {
+  title: 'component/{{ componentName }}',
+  component: {{ componentName }},
+} as Meta
+
+const Template: Story<IProps> = (args) => <{{ componentName }} {...args} />
+
+export const Default = Template.bind({})
+Default.args = {}
