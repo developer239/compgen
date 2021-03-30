@@ -1,6 +1,6 @@
 {
   "name": "@compgen/eslint-auto",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "lib/index.js",
   "engines": {
@@ -16,8 +16,8 @@
   "types": "lib/index",
   "bin": "lib/bin.js",
   "dependencies": {
-    "@compgen/core": "^0.8.0",
-    "@compgen/eslint": "^0.3.7"
+    "@compgen/core": "^0.9.0",
+    "@compgen/eslint": "^0.3.8"
   },
   "publishConfig": {
     "access": "public"

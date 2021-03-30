@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.10](https://github.com/developer239/compgen/compare/@compgen/heroku@0.3.9...@compgen/heroku@0.3.10) (2021-03-30)
+
+**Note:** Version bump only for package @compgen/heroku
+
+
+
+
+
 ## [0.3.9](https://github.com/developer239/compgen/compare/@compgen/heroku@0.3.8...@compgen/heroku@0.3.9) (2021-03-27)
 
 **Note:** Version bump only for package @compgen/heroku

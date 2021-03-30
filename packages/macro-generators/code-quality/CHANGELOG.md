@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.8](https://github.com/developer239/compgen/compare/@compgen/code-quality@0.3.7...@compgen/code-quality@0.3.8) (2021-03-30)
+
+**Note:** Version bump only for package @compgen/code-quality
+
+
+
+
+
 ## [0.3.7](https://github.com/developer239/compgen/compare/@compgen/code-quality@0.3.6...@compgen/code-quality@0.3.7) (2021-03-27)
 
 
