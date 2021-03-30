@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/developer239/compgen/compare/@compgen/react-component@0.1.1...@compgen/react-component@0.1.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* minor generator bugs ([2f088f7](https://github.com/developer239/compgen/commit/2f088f73a3d093e44128a82b520d8032d1ed8c6e))
+
+
+
+
+
 ## [0.1.1](https://github.com/developer239/compgen/compare/@compgen/react-component@0.1.0...@compgen/react-component@0.1.1) (2021-03-30)
 
 
