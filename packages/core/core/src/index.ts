@@ -44,3 +44,17 @@ export {
 export { detectAppType } from './services/auto/detectAppType'
 export { hasDependency } from './services/auto/hasDependency'
 export { capitalize, capitalizeAll } from './helpers/text'
+
+// TODO: write custom recursive-copy
+
+// eslint-disable-next-line
+const originalError = console.error
+
+// [DEP0128] DeprecationWarning: Invalid 'main' field in '/compgen/packages/core/core/node_modules/emitter-mixin/package.json'
+// eslint-disable-next-line no-console
+console.error = (...args) => {
+  if (/DeprecationWarning: Invalid 'main' field in/u.test(args[0])) {
+    return
+  }
+  originalError.call(console, ...args)
+}

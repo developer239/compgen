@@ -1,3 +1,5 @@
+## NOTE: Development if this repository was temporarily suspended.
+
 # Composable Generators
 
 ![release](https://github.com/developer239/compgen/workflows/release/badge.svg)
