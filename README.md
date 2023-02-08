@@ -1,4 +1,4 @@
-## NOTE: Development if this repository was temporarily suspended.
+## NOTE: no longer under development
 
 # Composable Generators
 
